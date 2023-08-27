@@ -9,37 +9,49 @@ const Navbar = () => {
   const [toggle, setToggle] = useState(false);
 
   const btnStyle = {
-    backgroundColor: '#4ff540',
-    color: 'white',
-    padding: '10px',
+    backgroundColor: "#4ff540",
+    color: "white",
+    padding: "10px",
     // textAlign: 'center'
   };
 
   return (
-    <nav className="w-full flex py-6 justify-between items-center navbar">
-      <img src={logo} alt="Hoobank" className="w-[124px] h-[32px]" />
+    <nav
+      id="navbar"
+      className="w-full flex py-6 justify-between navbar"
+    >
+      <div className="flex py-6 justify-between container-nav">
+        <img src={logo} alt="EPCC" className="h-[25px] logocs" />
 
-      <ul className="list-none sm:flex hidden justify-end items-center flex-1">
-        {navLinks.map((nav, index) => (
-          <li
-            key={nav.id}
-            className={`font-poppins font-normal cursor-pointer text-[16px] ${
-              active === nav.title ? "text-white" : "text-dimWhite"
-            } ${index === navLinks.length ? "mr-0" : "mr-10"}`}
-            onClick={() => setActive(nav.title)}
-          >
-            <a href={`#${nav.id}`}>{nav.title}</a>
-          </li>
-        ))}
-        <li 
-          className={`font-poppins font-normal cursor-pointer text-[16px] 
-          ${ "text-dimWhite" } ${ "mr-10" }`}
-        >
-          <a href="" target="blank" className="btn-registrate">Registrate</a>
-        </li>
-      </ul>
+        {/* <div> */}
+          <ul className="list-none sm:flex hidden justify-end items-center flex-1">
+            {navLinks.map((nav, index) => (
+              <li
+                key={nav.id}
+                className={`font-poppins font-normal cursor-pointer text-[16px] ${
+                  active === nav.title ? "text-white" : "text-dimWhite"
+                } ${index === navLinks.length ? "mr-0" : "mr-10"}`}
+                onClick={() => setActive(nav.title)}
+              >
+                <a href={`#${nav.id}`}>{nav.title}</a>
+              </li>
+            ))}
 
-      <div className="sm:hidden flex flex-1 justify-end items-center">
+            <li
+              className={`font-poppins font-normal cursor-pointer text-[16px]
+              ${"text-dimWhite"} ${"mr-10"}`}
+            >
+              <a href="" target="blank" className="btn-registrate">
+                Registrate
+              </a>
+            </li>
+          </ul>
+        {/* </div> */}
+
+      </div>
+
+
+      <div id="toggle-syles" className="sm:hidden flex flex-1 justify-end px-5 items-center">
         <img
           src={toggle ? close : menu}
           alt="menu"
@@ -64,8 +76,17 @@ const Navbar = () => {
                 <a href={`#${nav.id}`}>{nav.title}</a>
               </li>
             ))}
+            <li
+              className={`font-poppins font-medium cursor-pointer text-[16px] btn-registrate-container-responsive 
+              ${"text-dimWhite"} ${"mr-4"}`}
+            >
+              <a href="" target="blank" className="btn-registrate">
+                Registrate
+              </a>
+            </li>
           </ul>
         </div>
+        
       </div>
     </nav>
   );

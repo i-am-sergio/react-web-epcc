@@ -1,0 +1,53 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-size: 100%;
+}
+
+.timer {
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+}
+
+.timer-section {
+    text-align: center;
+    padding: 0 5%;
+}
+
+.timer-title {
+    font-weight: 600;
+}
+
+.timer-value {
+    color: #f8f8f8;
+}
+
+.timer-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    text-align: center;
+    gap: 10%;
+}
+
+.timer-value-large {
+    font-size: 4em;
+}
+
+@media screen and (max-width: 768px) {
+    .timer-grid {
+        grid-template-columns: repeat(4, 1fr); /* Cambia a 2 columnas en lugar de 4 */
+    }
+
+    .timer-value-large {
+        font-size: 2.5em; /* Reduce el tamaño de fuente para dispositivos móviles */
+    }
+}

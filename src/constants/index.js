@@ -7,7 +7,7 @@ export const navLinks = [
   },
   {
     id: "features",
-    title: "Acerca De",
+    title: "Sobre",
   },
   {
     id: "product",
@@ -27,23 +27,39 @@ export const features = [
   {
     id: "feature-1",
     icon: star,
-    title: "Rewards",
+    title: "Premios",
     content:
-      "The best credit cards offer some tantalizing combinations of promotions and prizes",
+      "Participe en nuestros concursos de programacion y desarrollo de videojuegos y gana sorpresas",
   },
   {
     id: "feature-2",
     icon: shield,
-    title: "100% Secured",
+    title: "Actividades",
     content:
-      "We take proactive steps make sure your information and transactions are secure.",
+      "Seras participe de ponencias en las distintas areas tematicas relacionadas a la computacion y las matematicas",
   },
   {
     id: "feature-3",
     icon: send,
-    title: "Balance Transfer",
+    title: "Confraternizacion",
     content:
-      "A balance transfer credit card can save you a lot of money in interest charges.",
+      `Tendremos un espacio para compartir experiencias y fortalecer la red de la familia de "Computer Science"`,
+  },
+];
+
+
+export const direcciones = [
+  {
+    id: "feature-1",
+    title: "Direccion",
+    content:
+      "Av. Venezuela S/N Puerta 3 Campus de Ingenieria (Pabellón Alan Turing)",
+  },
+  {
+    id: "feature-2",
+    title: "Email",
+    content:
+      "epcc@unsa.edu.pe",
   },
 ];
 
@@ -77,49 +93,54 @@ export const feedback = [
 export const stats = [
   {
     id: "stats-1",
-    title: "User Active",
-    value: "3800+",
+    title: "Asistentes",
+    value: "300+",
   },
   {
     id: "stats-2",
-    title: "Trusted by Company",
-    value: "230+",
+    title: "Charlas",
+    value: "20+",
   },
   {
     id: "stats-3",
-    title: "Transaction",
-    value: "$230M+",
+    title: "Ponentes",
+    value: "20+",
+  },
+  {
+    id: "stats-4",
+    title: "Areas Tematicas",
+    value: "10+",
   },
 ];
 
 export const footerLinks = [
   {
-    title: "Useful Links",
+    title: "Web Development",
     links: [
       {
-        name: "Content",
-        link: "https://www.hoobank.com/content/",
+        name: "Lidereza",
+        link: "https://github.com/",
       },
       {
-        name: "How it Works",
-        link: "https://www.hoobank.com/how-it-works/",
+        name: "Sergio Mogollon",
+        link: "https://github.com/i-am-sergio",
       },
       {
-        name: "Create",
-        link: "https://www.hoobank.com/create/",
+        name: "Braulio Maldonado",
+        link: "https://github.com/",
       },
       {
-        name: "Explore",
-        link: "https://www.hoobank.com/explore/",
+        name: "Braulio Maldonado1",
+        link: "https://github.com/",
       },
       {
-        name: "Terms & Services",
-        link: "https://www.hoobank.com/terms-and-services/",
+        name: "Braulio Maldonado2",
+        link: "https://github.com/",
       },
     ],
   },
   {
-    title: "Community",
+    title: "Design",
     links: [
       {
         name: "Help Center",
@@ -133,18 +154,10 @@ export const footerLinks = [
         name: "Suggestions",
         link: "https://www.hoobank.com/suggestions/",
       },
-      {
-        name: "Blog",
-        link: "https://www.hoobank.com/blog/",
-      },
-      {
-        name: "Newsletters",
-        link: "https://www.hoobank.com/newsletters/",
-      },
     ],
   },
   {
-    title: "Partner",
+    title: "Marketing",
     links: [
       {
         name: "Our Partner",
@@ -167,7 +180,7 @@ export const socialMedia = [
   {
     id: "social-media-2",
     icon: facebook,
-    link: "https://www.facebook.com/",
+    link: "https://www.facebook.com/epcc.unsa",
   },
   {
     id: "social-media-3",

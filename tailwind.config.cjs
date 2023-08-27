@@ -4,11 +4,20 @@ module.exports = {
   mode: "jit",
   theme: {
     extend: {
+      height:{
+        "200": "200px", 
+        "400": "400px", 
+      },
       colors: {
         primary: "#00040f",
         secondary: "#00f6ff",
         dimWhite: "rgba(255, 255, 255, 0.7)",
         dimBlue: "rgba(9, 151, 124, 0.1)",
+        myGreen: '#73ff32',
+        myYellow: '#E3C800',
+        myGreen2: '#A4C400',
+        myRed: '#FA6800',
+        myBlue: '#1BA1E2',
       },
       fontFamily: {
         poppins: ["Poppins", "sans-serif"],

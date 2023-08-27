@@ -1,6 +1,45 @@
 a.btn-registrate {
     background-color: #73ff32;
     color: white;
-    padding: 10px;
-    border-radius: 5px;
+    padding: 10px 30px;
+    border-radius: 30px;
+    border: 1px solid transparent;
+}
+
+a.btn-registrate:hover {
+    background-color: transparent;
+    color: white;
+    padding: 10px 30px;
+    border-radius: 30px;
+    border: 1px solid #73ff32;
+    transition: 0.8s ease;
+}
+
+.btn-registrate-container-responsive {
+    padding-top: 20px;
+}
+
+#navbar {
+    position: fixed; 
+    top: 0;
+    background-color: rgba(0, 0, 0, 0.438);
+    z-index: 100;
+    left: 0;
+    padding-left: 15%;
+}
+
+.logocs{
+    margin-right: 25%;
+}
+
+@media screen and (max-width: 450px) {
+    .logocs{
+        transform: scale(0.8);
+        margin-right: 20px;
+    }
+}
+
+#toggle-syles{
+    padding-left: 0px;
+    /* padding-right: 10px; */
 }

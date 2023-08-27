@@ -1,28 +1,45 @@
 import styles from "./style";
-import { Billing, Business, CardDeal, Clients, CTA, Footer, Navbar, Stats, Testimonials, Hero } from "./components";
+import "./css/App.css";
+import {
+  Billing,
+  Business,
+  CardDeal,
+  Clients,
+  CTA,
+  Footer,
+  Navbar,
+  Stats,
+  Testimonials,
+  Hero,
+  Activities,
+  Cronograma,
+  Mapa,
+} from "./components";
 
 const App = () => (
-  <div className="bg-primary w-full overflow-hidden">
+  <div className="bg-primary w-full overflow-hidden ">
     <div className={`${styles.paddingX} ${styles.flexCenter}`}>
-      <div className={`${styles.boxWidth}`}>
+      <div className={`${styles.boxWidth} flex items-center justify-center text-center`}>
         <Navbar />
       </div>
     </div>
 
-    <div className={`bg-primary ${styles.flexStart}`}>
+    <div className={`bg-primary ${styles.flexStart} home`}>
       <div className={`${styles.boxWidth}`}>
         <Hero />
       </div>
     </div>
-    
+
     <div className={`bg-primary ${styles.paddingX} ${styles.flexCenter}`}>
       <div className={`${styles.boxWidth}`}>
         <Stats />
         <Business />
-        <Billing />
-        <CardDeal />
-        <Testimonials />
-        <Clients />
+        <Activities />
+        <Cronograma />
+        {/* <Billing /> */}
+        {/* <CardDeal /> */}
+        {/* <Testimonials /> */}
+        {/* <Clients /> */}
         <CTA />
         <Footer />
       </div>

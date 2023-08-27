@@ -9,6 +9,10 @@ import Footer from "./Footer";
 import Testimonials from "./Testimonials";
 import Hero from "./Hero";
 
+import Activities from "./Activities";
+import Cronograma from './Cronograma'
+import Mapa from "./Mapa"
+
 export {
   Navbar,
   Billing,
@@ -20,4 +24,7 @@ export {
   Footer,
   Testimonials,
   Hero,
+  Activities,
+  Cronograma,
+  Mapa,
 };
