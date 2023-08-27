@@ -46,10 +46,10 @@ const Activities = () => {
         {actividades.map((activ) => (
           <div
             key={activ.id}
-            className="shadow-lg overflow-hidden text-center justify-center border-solid bg-transparent border-l-2 border-b-8 rounded-lg border-t-2 border-r-8 border-myGreen"
+            className="shadow-lg overflow-hidden text-center justify-center border-solid bg-transparent border-l-2 border-b-8 rounded-[30px] border-t-2 border-r-8 border-myGreen"
             // overflow-hidden
           >
-            <div className="overflow-hidden flex justify-center items-center hover:scale-125 duration-1000">
+            <div className="overflow-hidden flex justify-center items-center hover:scale-125 duration-1000 rounded-md">
               <VscSourceControl className={`${activ.color} text-8xl my-20`} />
             </div>
             <h3 className="py-2 text-2xl text-center text-myGreen px-6 min-h-[120px] flex items-center justify-center">

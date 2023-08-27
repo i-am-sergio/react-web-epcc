@@ -4,6 +4,9 @@ module.exports = {
   mode: "jit",
   theme: {
     extend: {
+      borderRadius: {
+        '20': '20px',
+      },
       height:{
         "200": "200px", 
         "400": "400px", 
