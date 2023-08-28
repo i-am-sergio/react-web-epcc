@@ -39,13 +39,13 @@ const Business = () =>  (
         <a href="https://www.facebook.com/epcc.unsa" target="blank">
           <BsFacebook className="social-icons text-white"/>
         </a>
-        <a href="https://youtube.com" target="blank">
+        <a href="https://www.youtube.com/@escuelaprofesionaldecienci7865" target="blank">
           <BsYoutube className="social-icons text-white"/>
         </a>
-        <a href="https://twitter.com" target="blank">
+        <a href="https://twitter.com/EPCC_10" target="blank">
           <BsTwitter className="social-icons text-white"/>
         </a>
-        <a href="https://www.twitch.com/epcc.unsa" target="blank">
+        <a href="#" target="blank">
           <BsTwitch className="social-icons text-white"/>
         </a>
       </div>

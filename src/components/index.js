@@ -12,6 +12,9 @@ import Hero from "./Hero";
 import Activities from "./Activities";
 import Cronograma from './Cronograma'
 import Mapa from "./Mapa"
+import Galeria from "./Galeria"
+import Ponentes from "./Ponentes"
+
 
 export {
   Navbar,
@@ -27,4 +30,6 @@ export {
   Activities,
   Cronograma,
   Mapa,
+  Galeria,
+  Ponentes,
 };

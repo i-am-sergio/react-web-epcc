@@ -13,7 +13,8 @@ import {
   Hero,
   Activities,
   Cronograma,
-  Mapa,
+  Galeria,
+  Ponentes,
 } from "./components";
 
 const App = () => (
@@ -40,6 +41,8 @@ const App = () => (
         {/* <CardDeal /> */}
         {/* <Testimonials /> */}
         {/* <Clients /> */}
+        <Ponentes />
+        <Galeria />
         <CTA />
         <Footer />
       </div>
