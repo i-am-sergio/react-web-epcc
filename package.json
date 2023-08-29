@@ -1,9 +1,8 @@
 {
-  "name": "reactepcc",
+  "name": "react-web-epcc",
   "private": true,
   "version": "0.0.0",
   "type": "module",
-  "homepage": "http://i-am-sergio.github.io/react-web-epcc",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
