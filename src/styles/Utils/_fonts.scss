@@ -2,9 +2,9 @@
     font-family: sans-serif;
 }
 
-.h1 {
-    @extend %equal-fonts-propierties;
-}
+
+//@extend %equal-fonts-propierties;
+
 
 $fs-title-mobile: 1.75rem;
 $fs-title-tablet: 4.75rem;
@@ -36,6 +36,10 @@ $fs-title-laptop: 8.0rem;
         font-size: 0.875rem;
         line-height: 1.43;
     }
+    @else if($size == "tablet") {
+        font-size: 1.875rem;
+        line-height: 1.43;
+    }
     @else if($size == "laptop") {
         font-size: 1.875rem;
         line-height: 1.43;
@@ -59,6 +63,10 @@ $fs-title-laptop: 8.0rem;
         font-size: 2.75rem;
         line-height: 1.29;
     }
+    @else if($size == "tablet") {
+        font-size: 5.75rem;
+        line-height: 1.29;
+    }
     @else if($size == "laptop") {
         font-size: 5.75rem;
         line-height: 1.29;
@@ -71,11 +79,14 @@ $fs-title-laptop: 8.0rem;
 }
 
 @mixin display($size: mobile) {
-    @extend %equal-fonts-propierties;
     font-style: normal;
     font-weight: 600;
     @if($size == "mobile") {
         font-size: 4.00rem; 
+        line-height: 1.47;
+    }
+    @else if($size == "tablet") {
+        font-size: 6.25rem;
         line-height: 1.47;
     }
     @else if($size == "laptop") {

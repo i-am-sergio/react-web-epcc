@@ -22,6 +22,21 @@
     }
 }
 
+@media (min-width: map-get($breakpoints, tablet)) {
+    .contador {
+        margin-top: auto;
+        gap: 32px;
+        :global {
+            .timer-title {
+                @include title('tablet');
+            }
+            .timer-subtitle {
+                @include body-strong('tablet');
+            }
+        }
+    }
+  }
+
 @media (min-width: map-get($breakpoints, laptop)) {
     .contador {
         margin-top: auto;
