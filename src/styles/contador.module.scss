@@ -1,0 +1,39 @@
+@import "./Utils/constants.scss";
+@import "./Utils/_fonts.scss";
+
+.contador {
+    display: flex;
+    justify-content: center;
+    gap: 48px;
+    margin-top: auto;
+    :global {
+        .timer-section {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .timer-title {
+            @include title;
+        }
+        .timer-subtitle {
+            @include body-strong;
+            font-weight: 600;
+        }
+    }
+}
+
+@media (min-width: map-get($breakpoints, laptop)) {
+    .contador {
+        margin-top: auto;
+        justify-content: left;
+        gap: 32px;
+        :global {
+            .timer-title {
+                @include title('laptop');
+            }
+            .timer-subtitle {
+                @include body-strong('laptop');
+            }
+        }
+    }
+  }

@@ -1,0 +1,15 @@
+$padding-X-mobile: 16px;
+$padding-Y-mobile: 12px;
+$padding-X-laptop: 64px;
+$padding-Y-laptop: 16px;
+
+
+@mixin section($size: mobile) {
+    display: flex;
+    @if($size == "mobile") {
+        padding: $padding-Y-mobile $padding-X-mobile;
+    }
+    @else if($size == "laptop") {
+        padding: $padding-Y-laptop $padding-X-laptop;
+    }
+}

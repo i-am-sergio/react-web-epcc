@@ -1,5 +1,6 @@
 import {useEffect,useRef,useState} from 'react'
-import "../css/contador.css";
+
+import styles from "../styles/contador.module.scss";
 
 const Contador = () =>  {
     const [timerDays, setTimerDays] = useState('00');
@@ -43,29 +44,23 @@ const Contador = () =>  {
     });
 
     return (
-        <div>
-            <section className="timer-container mt-5">
-                <section className="timer">
-                    <div className="timer-grid">
-                        <section className="timer-section">
-                            <p className="timer-value timer-value-large">{timerDays}</p>
-                            <p className='my-5'><small className="timer-title">Dias</small></p>
-                        </section>
-                        <section className="timer-section">
-                            <p className="timer-value timer-value-large">{timerHours}</p>
-                            <p className='my-5'><small className="timer-title">Horas</small></p>
-                        </section>
-                        <section className="timer-section">
-                            <p className="timer-value timer-value-large">{timerMinutes}</p>
-                            <p className='my-5'><small className="timer-title">Minutos</small></p>
-                        </section>
-                        <section className="timer-section">
-                            <p className="timer-value timer-value-large">{timerSeconds}</p>
-                            <p className='my-5'><small className="timer-title">Segundos</small></p>
-                        </section>
-                    </div>
-                </section>
-            </section>
+        <div className={styles.contador}>
+            <div className="timer-section">
+                <p className='timer-title'>{timerDays}</p>
+                <p className='my-5 timer-subtitle'>Horas</p>
+            </div>
+            <div className="timer-section">
+            <p className='timer-title'>{timerHours}</p>
+                <p className='my-5 timer-subtitle'>Horas</p>
+            </div>
+            <div className="timer-section">
+            <p className='timer-title'>{timerMinutes}</p>
+                <p className='my-5 timer-subtitle'>Minutos</p>
+            </div>
+            <div className="timer-section">
+            <p className='timer-title'>{timerSeconds}</p>
+                <p className='my-5 timer-subtitle'>Segundos</p>
+            </div>
         </div>
     );
     

@@ -1,0 +1,85 @@
+%equal-fonts-propierties {
+    font-family: sans-serif;
+}
+
+.h1 {
+    @extend %equal-fonts-propierties;
+}
+
+$fs-title-mobile: 1.75rem;
+$fs-title-tablet: 4.75rem;
+$fs-title-laptop: 8.0rem;
+
+@mixin caption {
+    font-size: 0.75rem; /* 12px */
+    line-height: 1.33; /* 16px */
+}
+
+@mixin body($size: mobile) {
+    font-style: normal;
+    font-weight: 400;
+    @if($size == "mobile") {
+        font-size: 0.875rem;
+        line-height: 1.43;
+    }
+    @else if($size == "laptop") {
+        font-size: 1.875rem;
+        line-height: 1.43;
+    }
+}
+  
+
+@mixin body-strong($size: mobile) {
+    font-style: normal;
+    font-weight: 600;
+    @if($size == "mobile") {
+        font-size: 0.875rem;
+        line-height: 1.43;
+    }
+    @else if($size == "laptop") {
+        font-size: 1.875rem;
+        line-height: 1.43;
+    }
+}
+  
+@mixin body-large {
+    font-size: 1.125rem; /* 18px */
+    line-height: 1.33; /* 24px */
+}
+  
+@mixin subtitle {
+    font-size: 1.25rem; /* 20px */
+    line-height: 1.4; /* 28px */
+}
+  
+@mixin title($size: mobile) {
+    font-style: normal;
+    font-weight: 600;
+    @if($size == "mobile") {
+        font-size: 2.75rem;
+        line-height: 1.29;
+    }
+    @else if($size == "laptop") {
+        font-size: 5.75rem;
+        line-height: 1.29;
+    }
+}
+ 
+@mixin title-large {
+    font-size: 2.5rem; /* 40px */
+    line-height: 1.3; /* 52px */
+}
+
+@mixin display($size: mobile) {
+    @extend %equal-fonts-propierties;
+    font-style: normal;
+    font-weight: 600;
+    @if($size == "mobile") {
+        font-size: 4.00rem; 
+        line-height: 1.47;
+    }
+    @else if($size == "laptop") {
+        font-size: 6.25rem;
+        line-height: 1.47;
+    }
+}

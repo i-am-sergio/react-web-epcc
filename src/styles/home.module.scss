@@ -1,0 +1,76 @@
+@import "./Utils/constants.scss";
+@import "./Utils/_layouts.scss";
+@import "./Utils/_fonts.scss";
+
+.home {
+  @include section;
+  padding-top: $navbar-height;
+  flex-direction: column;
+  color: $font-color-light;
+  height: 80vh;
+
+  &_container {
+    &_left {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      padding: 20% 0;
+      height: 100%;
+      width: 100%;
+      text-align: center;
+    }
+    &_right {
+      display: none;
+    }
+  };
+  h1 {
+    display: block;
+    @include display;
+    span {
+      color: map-get($colors, secundario);
+    }
+  }
+  &_img {
+    width: 100%;
+  };
+};
+
+@media (min-width: map-get($breakpoints, laptop)) {
+  .home {
+    @include section('laptop');
+    justify-content: center;
+    flex-wrap: nowrap;
+    flex-direction:row;
+    padding-top: $navbar-height;
+    height: 80vh;
+    &_container {
+      &_left {
+        height: 100%;
+        padding: 0;
+        text-align: left;
+        justify-content: start;
+        height: 70%;
+      }
+      &_right {
+        display: block;
+        display: flex;
+        align-items: center; 
+        max-width: 45%;
+      }
+    }
+    h1 {
+      @include display('laptop');
+    }
+    &_img {
+      width: 100%;
+      max-height: 45vh;
+    };
+  }
+}
+
+
+
+
+
+
+
