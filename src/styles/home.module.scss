@@ -26,6 +26,12 @@
       font-weight: 600;
       line-height: normal;
     }
+    hr {
+      border: 1.5px solid map-get($colors, secundario);
+      border-radius: 5px;
+      margin: 10px auto;
+      width: 90%;
+    }
   }
   h1 {
     display: block;
@@ -70,6 +76,11 @@
         background-size: contain;
       }
     }
+    .home_text {
+      hr {
+        width: 70%;
+      }
+    }
     h1 {
       min-height: calc(7vw * 4.5);
       font-size: 7.00vw;
@@ -99,6 +110,13 @@
       }
       &_right {
         flex-grow: 5;
+      }
+    }
+    .home_text {
+      hr {
+        width: 90%;
+        margin: 0;
+        margin: 20px 0;
       }
     }
     h1 {
