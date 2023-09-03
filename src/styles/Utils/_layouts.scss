@@ -7,6 +7,9 @@ $padding-Y-tablet: 24px;
 $padding-X-laptop: 64px;
 $padding-Y-laptop: 32px;
 
+$padding-X-desktop: 128px;
+$padding-Y-desktop: 32px;
+
 
 @mixin section($size: mobile) {
     display: flex;
@@ -18,5 +21,8 @@ $padding-Y-laptop: 32px;
     }
     @else if($size == "laptop") {
         padding: $padding-Y-laptop $padding-X-laptop;
+    }
+    @else if($size == "desktop") {
+        padding: $padding-Y-desktop $padding-X-desktop;
     }
 }

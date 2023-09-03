@@ -126,6 +126,13 @@
   }
 }
 
+@media (min-width: map-get($breakpoints, desktop)) {
+  .home {
+    @include section('desktop');
+  }
+
+}
+
 
 
 
