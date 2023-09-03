@@ -1,5 +1,9 @@
 $padding-X-mobile: 16px;
-$padding-Y-mobile: 8px;
+$padding-Y-mobile: 24px;
+
+$padding-X-tablet: 32px;
+$padding-Y-tablet: 24px;
+
 $padding-X-laptop: 64px;
 $padding-Y-laptop: 16px;
 
@@ -8,6 +12,9 @@ $padding-Y-laptop: 16px;
     display: flex;
     @if($size == "mobile") {
         padding: $padding-Y-mobile $padding-X-mobile;
+    }
+    @else if($size == "tablet") {
+        padding: $padding-Y-tablet $padding-X-tablet;
     }
     @else if($size == "laptop") {
         padding: $padding-Y-laptop $padding-X-laptop;

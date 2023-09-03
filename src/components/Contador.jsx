@@ -44,23 +44,26 @@ const Contador = () =>  {
     });
 
     return (
+        <div className={styles.contador_container}>
+        <h2>FALTAN</h2>
         <div className={styles.contador}>
             <div className="timer-section">
                 <p className='timer-title'>{timerDays}</p>
-                <p className='my-5 timer-subtitle'>Horas</p>
+                <p className='timer-subtitle'>D&iacute;as</p>
             </div>
             <div className="timer-section">
             <p className='timer-title'>{timerHours}</p>
-                <p className='my-5 timer-subtitle'>Horas</p>
+                <p className='timer-subtitle'>Horas</p>
             </div>
             <div className="timer-section">
             <p className='timer-title'>{timerMinutes}</p>
-                <p className='my-5 timer-subtitle'>Minutos</p>
+                <p className='timer-subtitle'>Minutos</p>
             </div>
             <div className="timer-section">
             <p className='timer-title'>{timerSeconds}</p>
-                <p className='my-5 timer-subtitle'>Segundos</p>
+                <p className='timer-subtitle'>Segundos</p>
             </div>
+        </div>
         </div>
     );
     

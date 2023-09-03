@@ -1,53 +1,72 @@
 @import "./Utils/constants.scss";
-@import "./Utils/_fonts.scss";
 
 .contador {
     display: flex;
-    justify-content: center;
-    gap: 48px;
-    margin-top: auto;
+    flex-wrap: wrap;
     :global {
         .timer-section {
+            width: 50%;
             display: flex;
             flex-direction: column;
             align-items: center;
         }
         .timer-title {
-            @include title;
+            font-size: 15vw;
+            font-weight: 700;
         }
         .timer-subtitle {
-            @include body-strong;
-            font-weight: 600;
+            color: map-get($colors, secundario);
+            font-size: 5vw;
+            font-weight: 700;
         }
+    }
+}
+
+.contador_container {
+    h2 {
+        font-size: 3vw;
+        font-weight: 700;
     }
 }
 
 @media (min-width: map-get($breakpoints, tablet)) {
     .contador {
-        margin-top: auto;
-        gap: 32px;
+        justify-content: center;
+        align-items: center;
+        flex-direction: row;
+        gap: 64px;
         :global {
+            .timer-section {
+                width: auto;
+                flex-direction: column;
+            }
             .timer-title {
-                @include title('tablet');
+                font-size: 10vw;
             }
             .timer-subtitle {
-                @include body-strong('tablet');
+                font-size: 3vw;
             }
         }
     }
   }
 
 @media (min-width: map-get($breakpoints, laptop)) {
+    .contador_container {
+        h2 {
+            font-size: 1vw;
+            font-weight: 700;
+        }
+    }
     .contador {
         margin-top: auto;
         justify-content: left;
         gap: 32px;
         :global {
             .timer-title {
-                @include title('laptop');
+                font-size: 3vw;
             }
             .timer-subtitle {
-                @include body-strong('laptop');
+                font-size: 1vw;
             }
         }
     }

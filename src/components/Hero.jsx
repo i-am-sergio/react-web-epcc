@@ -48,12 +48,13 @@ const Hero = () => {
   return (
     <section id="home" className={styles.home}>
       <div className={styles.home_container_left}>
-        <p>
-            <span className="text-white">09 AL 13 DE OCTUBRE </span> <br />
-            <span className="text-white">UNSA</span> - PABELLON DE CIENCIA DE LA
-            COMPUTACION
-        </p>
-        <h1>SEMANA DE LA<br/><span>COMPUTACI&Oacute;N</span><br/>{text}</h1>
+        <div className={styles.home_text}>
+          <p> 09 AL 13 DE OCTUBRE<br />
+              UNSA - PABELLON DE CIENCIA DE LA
+              COMPUTACION
+          </p>
+          <h1>SEMANA DE LA<br/><span>COMPUTACI&Oacute;N</span><br/>{text}</h1>
+        </div>
         <Contador />
       </div>
       <div className={styles.home_container_right}>

@@ -10,6 +10,11 @@ $fs-title-mobile: 1.75rem;
 $fs-title-tablet: 4.75rem;
 $fs-title-laptop: 8.0rem;
 
+$fs-display-mobile: 4.00rem;
+$fs-display-tablet: 4.75rem;
+$fs-display-laptop: 8.0rem;
+
+
 @mixin caption {
     font-size: 0.75rem; /* 12px */
     line-height: 1.33; /* 16px */
@@ -81,16 +86,14 @@ $fs-title-laptop: 8.0rem;
 @mixin display($size: mobile) {
     font-style: normal;
     font-weight: 600;
+    line-height: 1.47;
     @if($size == "mobile") {
-        font-size: 4.00rem; 
-        line-height: 1.47;
+        font-size: $fs-display-mobile; 
     }
     @else if($size == "tablet") {
         font-size: 6.25rem;
-        line-height: 1.47;
     }
     @else if($size == "laptop") {
         font-size: 6.25rem;
-        line-height: 1.47;
     }
 }
