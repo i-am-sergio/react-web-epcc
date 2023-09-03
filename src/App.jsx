@@ -25,11 +25,8 @@ const App = () => (
       </div>
     </div>
 
-    <div className={`bg-primary ${styles.flexStart} home`}>
-      <div className={`${styles.boxWidth}`}>
-        <Hero />
-      </div>
-    </div>
+    <Hero />
+
 
     <div className={`bg-primary ${styles.paddingX} ${styles.flexCenter}`}>
       <div className={`${styles.boxWidth}`}>

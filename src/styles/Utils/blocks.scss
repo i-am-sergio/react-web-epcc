@@ -1,0 +1,5 @@
+@mixin box-padding($padding: DarkGray) {
+    background: $theme;
+    box-shadow: 0 0 1px rgba($theme, .25);
+    color: #fff;
+  }
