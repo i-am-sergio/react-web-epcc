@@ -94,17 +94,17 @@ export const stats = [
   {
     id: "stats-1",
     title: "Asistentes",
-    value: "300+",
+    value: "100+",
   },
   {
     id: "stats-2",
     title: "Charlas",
-    value: "20+",
+    value: "10+",
   },
   {
     id: "stats-3",
     title: "Ponentes",
-    value: "20+",
+    value: "10+",
   },
   {
     id: "stats-4",
