@@ -1,0 +1,15 @@
+
+.flex {
+  display: flex;
+}
+
+.flex-1 {
+  flex: 1;
+}
+
+
+@media (max-width: 500px) {
+    .container-stats {
+      margin-right: 15%;
+    }
+  }
