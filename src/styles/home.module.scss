@@ -50,9 +50,8 @@
 @media (min-width: map-get($breakpoints, tablet)) {
   .home {
     @include section('tablet');
-    height: calc(100vh - $navbar-height);
     flex-direction:column;
-    gap: 64px;
+    gap: 0;
     &_container {
       &_left {
         display: flex;
