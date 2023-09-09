@@ -1,0 +1,38 @@
+@import "./Utils/constants.scss";
+@import "./Utils/_fonts.scss";
+
+// Usar mobile first. :D
+// Parte definiendo los estilos para version mobile.
+
+.contenedor {
+
+    // usar variables de constants.csss
+    color: $font-color-light;
+    // usar fonts rem
+    @include title("mobile");
+
+    p { // equivale a ".contenedor p"
+        color: $font-color-light;
+    }
+
+    .contenedor2 { //equivale a .contenedor_container
+        &_1 {
+            display: none;
+        }
+        &_2 {
+          display: none;
+        }
+    };
+
+}
+
+// No es necesario usar todos los media queries.
+
+@media (min-width: map-get($breakpoints, tablet)) {
+}
+
+@media (min-width: map-get($breakpoints, laptop)) {
+}
+
+@media (min-width: map-get($breakpoints, desktop)) {
+}
