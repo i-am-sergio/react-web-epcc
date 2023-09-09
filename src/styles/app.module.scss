@@ -1,0 +1,5 @@
+@import "./Utils/constants.scss";
+
+.App {
+    background: map-get($background, fondo_gradiente);
+}

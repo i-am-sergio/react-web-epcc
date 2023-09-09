@@ -1,6 +1,7 @@
 import styles from "./style";
-import "./css/App.css";
+import _styles from "./styles/app.module.scss";
 import {
+  About,
   Billing,
   Business,
   CardDeal,
@@ -18,7 +19,7 @@ import {
 } from "./components";
 
 const App = () => (
-  <div className="bg-primary w-full overflow-hidden ">
+  <div className={_styles.App}>
     <div className={`${styles.paddingX} ${styles.flexCenter}`}>
       <div className={`${styles.boxWidth} flex items-center justify-center text-center`}>
         <Navbar />
