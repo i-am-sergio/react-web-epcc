@@ -3,6 +3,10 @@ $colors: (
   secundario: #73ff32,    
 );
 
+$background: (
+  fondo_gradiente: linear-gradient(180deg, #04279C 0%, #210742 34%, #031A66 68.89%, #130328 99.48%),
+);
+
 //font colors
 $font-color-light: white;
 

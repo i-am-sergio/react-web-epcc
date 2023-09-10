@@ -28,7 +28,7 @@ $fs-display-laptop: 8.0rem;
         line-height: 1.43;
     }
     @else if($size == "laptop") {
-        font-size: 1.875rem;
+        font-size: 1.6rem;
         line-height: 1.43;
     }
 }
@@ -56,9 +56,12 @@ $fs-display-laptop: 8.0rem;
     line-height: 1.33; /* 24px */
 }
   
-@mixin subtitle {
+@mixin subtitle($size: mobile) {
     font-size: 1.25rem; /* 20px */
     line-height: 1.4; /* 28px */
+    @if($size == "laptop") {
+        font-size: 4.75rem;
+    }
 }
   
 @mixin title($size: mobile) {

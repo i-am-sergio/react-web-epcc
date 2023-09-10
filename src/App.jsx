@@ -1,6 +1,7 @@
 import styles from "./style";
-import "./css/App.css";
+import _styles from "./styles/app.module.scss";
 import {
+  About,
   Billing,
   Business,
   CardDeal,
@@ -18,32 +19,19 @@ import {
 } from "./components";
 
 const App = () => (
-  <div className="bg-primary w-full overflow-hidden ">
-    <div className={`${styles.paddingX} ${styles.flexCenter}`}>
-      <div className={`${styles.boxWidth} flex items-center justify-center text-center`}>
-        <Navbar />
-      </div>
-    </div>
-
+  <div className={_styles.App}>
+    <Navbar />
     <Hero />
 
+    <Stats />
+    <About />
+    
+    <Activities />
+    <Ponentes />
+    <Galeria />
+    <CTA />
+    <Footer />
 
-    <div className={`bg-primary ${styles.paddingX} ${styles.flexCenter}`}>
-      <div className={`${styles.boxWidth}`}>
-        <Stats />
-        <Business />
-        <Activities />
-        <Cronograma />
-        {/* <Billing /> */}
-        {/* <CardDeal /> */}
-        {/* <Testimonials /> */}
-        {/* <Clients /> */}
-        <Ponentes />
-        <Galeria />
-        <CTA />
-        <Footer />
-      </div>
-    </div>
   </div>
 );
 

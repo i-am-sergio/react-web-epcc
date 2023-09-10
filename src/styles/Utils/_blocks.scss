@@ -3,3 +3,10 @@
     box-shadow: 0 0 1px rgba($theme, .25);
     color: #fff;
   }
+  
+@mixin block-title-center {
+  display: block;
+  width: 100%;
+  text-align: center;
+  padding-bottom: 16px;
+}

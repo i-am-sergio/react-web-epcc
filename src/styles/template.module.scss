@@ -6,10 +6,6 @@
 
 .contenedor {
 
-    // usar variables de constants.csss
-    color: $font-color-light;
-    // usar fonts rem
-    @include title("mobile");
 
     p { // equivale a ".contenedor p"
         color: $font-color-light;
