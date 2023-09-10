@@ -1,5 +1,13 @@
 @import "./Utils/constants.scss";
+@import "./Utils/_fonts.scss";
 
 .App {
     background: map-get($background, fondo_gradiente);
+    color: $font-color-light;
+    h2 {
+        @include title("mobile");
+    }
+    p {
+        @include body("laptop")
+    }
 }

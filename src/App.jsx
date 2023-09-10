@@ -20,31 +20,18 @@ import {
 
 const App = () => (
   <div className={_styles.App}>
-    <div className={`${styles.paddingX} ${styles.flexCenter}`}>
-      <div className={`${styles.boxWidth} flex items-center justify-center text-center`}>
-        <Navbar />
-      </div>
-    </div>
-
+    <Navbar />
     <Hero />
 
+    <Stats />
+    <About />
+    
+    <Activities />
+    <Ponentes />
+    <Galeria />
+    <CTA />
+    <Footer />
 
-    <div className={`bg-primary ${styles.paddingX} ${styles.flexCenter}`}>
-      <div className={`${styles.boxWidth}`}>
-        <Stats />
-        <Business />
-        <Activities />
-        <Cronograma />
-        {/* <Billing /> */}
-        {/* <CardDeal /> */}
-        {/* <Testimonials /> */}
-        {/* <Clients /> */}
-        <Ponentes />
-        <Galeria />
-        <CTA />
-        <Footer />
-      </div>
-    </div>
   </div>
 );
 
