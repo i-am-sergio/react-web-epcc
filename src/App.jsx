@@ -20,13 +20,12 @@ import {
 
 const App = () => (
   <div className={_styles.App}>
-    <Navbar />
     <Hero />
 
     <Stats />
     <About />
-    
     <Activities />
+    
     <Ponentes />
     <Galeria />
     <CTA />

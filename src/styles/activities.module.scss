@@ -1,0 +1,46 @@
+@import "./Utils/constants.scss";
+@import "./utils/layouts";
+@import "./utils/blocks";
+
+.activities {
+    @include section;
+    background: rgba(0, 0, 0, 0.40);
+    flex-direction: column;
+    h2 {
+        @include block-title-center;
+    }
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+    padding: 0 16px;
+}
+
+@media (min-width: map-get($breakpoints, tablet)) {
+    .activities {
+        @include section('tablet');
+    }
+    .container {
+        display: inline-flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+    };
+}
+
+@media (min-width: map-get($breakpoints, laptop)) {
+    .activities {
+        @include section('laptop');
+    }
+    .container {
+        display: flex;
+    };
+}
+
+@media (min-width: map-get($breakpoints, desktop)) {
+    .activities {
+        @include section('desktop');
+    }
+}

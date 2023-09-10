@@ -45,6 +45,9 @@
       color: map-get($colors, secundario);
     }
   }
+  h2 {
+    padding-bottom: 0;
+  }
 };
 
 @media (min-width: map-get($breakpoints, tablet)) {
