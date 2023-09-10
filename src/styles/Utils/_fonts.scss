@@ -57,27 +57,33 @@ $fs-display-laptop: 8.0rem;
 }
   
 @mixin subtitle($size: mobile) {
-    font-size: 1.25rem; /* 20px */
     line-height: 1.4; /* 28px */
+    font-style: normal;
+    font-weight: 600;
+
+    @if($size == "mobile") {
+        font-size: 6vw;
+    }
+    @if($size == "tablet") {
+        font-size: 4vw;
+    }
     @if($size == "laptop") {
-        font-size: 4.75rem;
+        font-size: 2.75rem;
     }
 }
   
 @mixin title($size: mobile) {
     font-style: normal;
     font-weight: 600;
+    line-height: 1.29;
     @if($size == "mobile") {
-        font-size: 2.75rem;
-        line-height: 1.29;
+        font-size: 10vw;
     }
     @else if($size == "tablet") {
-        font-size: 5.75rem;
-        line-height: 1.29;
+        font-size: 6vw;
     }
     @else if($size == "laptop") {
-        font-size: 5.75rem;
-        line-height: 1.29;
+        font-size: 2.75rem;
     }
 }
  

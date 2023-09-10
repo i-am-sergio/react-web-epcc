@@ -1,6 +1,7 @@
 $colors: (
   principal: red,
-  secundario: #73ff32,    
+  secundario: #73ff32,
+  terciario: yellow,    
 );
 
 $background: (
@@ -13,7 +14,7 @@ $font-color-light: white;
 // font-size
 $font-size-title: 8rem;
 
-$navbar-height: 10rem;
+$navbar-height: 2rem;
 
 $breakpoints: (
   mobile: 375px,

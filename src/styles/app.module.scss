@@ -5,9 +5,36 @@
     background: map-get($background, fondo_gradiente);
     color: $font-color-light;
     h2 {
-        @include title("mobile");
+        @include title();
+        padding-bottom: 16px;
+    }
+    h3 {
+        @include subtitle();
     }
     p {
         @include body("laptop")
+    }
+}
+
+@media (min-width: map-get($breakpoints, tablet)) {
+    .App {
+        h2 {
+            @include title("tablet");
+        }
+        h3 {
+            @include subtitle("tablet");
+        }
+    }
+}
+
+@media (min-width: map-get($breakpoints, laptop)) {
+    .App {
+        h2 {
+            @include title("laptop");
+            padding-bottom: 32px;
+        }
+        h3 {
+            @include subtitle("laptop");
+        }
     }
 }

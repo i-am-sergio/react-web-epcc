@@ -8,7 +8,6 @@
     flex-direction: column;
     h2 {
         @include block-title-center;
-        font-size: 10vw;
     }
 }
 
@@ -31,9 +30,6 @@
 @media (min-width: map-get($breakpoints, tablet)) {
     .about {
         @include section('tablet');
-        h2 {
-            font-size: 6vw;
-        }
     }
     .container {
         &_icons {
@@ -45,10 +41,6 @@
 @media (min-width: map-get($breakpoints, laptop)) {
     .about {
         @include section('laptop');
-        h2 {
-            @include subtitle('laptop');
-            padding-bottom: 32px;
-        }
     }
     
     .container {
