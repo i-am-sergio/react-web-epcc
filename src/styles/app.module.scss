@@ -4,6 +4,7 @@
 .App {
     background: map-get($background, fondo_gradiente);
     color: $font-color-light;
+    font-family: Poppins, sans-serif;
     h2 {
         @include title();
         padding-bottom: 16px;
@@ -12,7 +13,8 @@
         @include subtitle();
     }
     p {
-        @include body("laptop")
+        @include body();
+        color: rgba(255, 255, 255, 0.7);
     }
 }
 

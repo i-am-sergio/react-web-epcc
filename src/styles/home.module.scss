@@ -22,6 +22,7 @@
   };
   .home_text {
     p {
+      color: $font-color-light;
       font-style: normal;
       font-weight: 600;
       line-height: normal;
@@ -98,33 +99,34 @@
 @media (min-width: map-get($breakpoints, laptop)) {
   .home {
     @include section('laptop');
-    padding-top: calc($navbar-height + $padding-X-laptop);
+    padding-top: calc($navbar-height + 16px);
     flex-wrap: nowrap;
     flex-direction:row;
     height: auto;
     gap: 0;
     &_container {
       &_left {
-        flex-grow: 1;
+        width: 60%;
         height: 100%;
+        gap: 32px;
         padding: 0;
         text-align: left;
         justify-content: start;
       }
       &_right {
-        flex-grow: 5;
+        width: 40%;
       }
     }
     .home_text {
       hr {
         width: 90%;
         margin: 0;
-        margin: 20px 0;
+        margin: 8px 0;
       }
     }
     h1 {
-      min-height: calc(3vw * 4.5);
-      font-size: 3vw;
+      min-height: calc(5.4rem * 4.5);
+      font-size: 5.4rem;
     }
   }
 }
@@ -133,7 +135,6 @@
   .home {
     @include section('desktop');
   }
-
 }
 
 

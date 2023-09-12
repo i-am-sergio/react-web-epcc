@@ -4,7 +4,7 @@
 
 .activities {
     @include section;
-    background: rgba(0, 0, 0, 0.40);
+    background: rgba(0, 0, 0, 0.50);
     flex-direction: column;
     h2 {
         @include block-title-center;

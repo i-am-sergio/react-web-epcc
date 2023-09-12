@@ -59,7 +59,9 @@
         }
         &_icons {
             width: 100%;
-            padding: 40px 16px;
+            justify-content: left;
+            gap:32px;
+            padding: 40px 8px;
         }
     }    
 }

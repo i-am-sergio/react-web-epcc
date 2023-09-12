@@ -1,20 +1,17 @@
 $colors: (
   principal: red,
-  secundario: #73ff32,
-  terciario: yellow,    
+  secundario: #7FFF00,
+  terciario: #edd819,    
 );
 
 $background: (
-  fondo_gradiente: linear-gradient(180deg, #04279C 0%, #210742 34%, #031A66 68.89%, #130328 99.48%),
+  fondo_gradiente: #222E50,
 );
 
 //font colors
-$font-color-light: white;
+$font-color-light: #f6f8ff;
 
-// font-size
-$font-size-title: 8rem;
-
-$navbar-height: 2rem;
+$navbar-height: 54px;
 
 $breakpoints: (
   mobile: 375px,

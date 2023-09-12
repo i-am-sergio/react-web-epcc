@@ -20,17 +20,11 @@ $fs-display-laptop: 8.0rem;
     line-height: 1.33; /* 16px */
 }
 
-@mixin body($size: mobile) {
+@mixin body() {
     font-style: normal;
     font-weight: 400;
-    @if($size == "mobile") {
-        font-size: 0.875rem;
-        line-height: 1.43;
-    }
-    @else if($size == "laptop") {
-        font-size: 1.6rem;
-        line-height: 1.43;
-    }
+    line-height: 1.43;
+    font-size: 1.4rem;
 }
   
 
