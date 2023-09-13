@@ -8,12 +8,13 @@ const TitleCard = ({ id, color, title, link }) => (
     >
         <VscSourceControl className={`${color} text-9xl my-12`} />
         <h3> {title} </h3>
-        <a
+        {/*<a
             href={link}
             target="blank"
         >
             Bases Del concurso
         </a>
+        */}
     </div>
 );
 

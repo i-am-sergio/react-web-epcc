@@ -4,7 +4,9 @@
 
 .activities {
     @include section;
-    background: rgba(0, 0, 0, 0.50);
+    background: map-get($background, seccion-oscuro);
+    padding-left: calc($padding-X-mobile * 2) ;
+    padding-right: calc($padding-X-mobile * 2) ;
     flex-direction: column;
     h2 {
         @include block-title-center;
@@ -41,6 +43,10 @@
 
 @media (min-width: map-get($breakpoints, desktop)) {
     .activities {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
         @include section('desktop');
     }
 }

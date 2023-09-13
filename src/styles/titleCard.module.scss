@@ -7,11 +7,11 @@
     align-items: center;
     margin-right: 11px;
     margin-bottom: 9px;
-    padding: 32px 8px;
+    padding: 32px 16px;
     gap: 8px;
     border-radius: 8px;
     text-align: center;
-    background: rgba(4, 39, 156, 0.4);
+    background: map-get($background, fondo_gradiente);
     box-shadow: 9px 11px 0px 0px map-get($colors, terciario);
 
     h3 {
@@ -38,10 +38,12 @@
 
 @media (min-width: map-get($breakpoints, laptop)) {
     .titleCard {
+        flex: 1;
         justify-content: space-between;
         width: 29%;
         h3 {
-            font-size: 1.2vw;
+            @include body-large();
+            margin-bottom: auto;
         }
 
         a {
@@ -52,7 +54,6 @@
 
 @media (min-width: map-get($breakpoints, desktop)) {
     .titleCard {
-        flex: 1;
         h3 {
             @include subtitle("laptop");
         }

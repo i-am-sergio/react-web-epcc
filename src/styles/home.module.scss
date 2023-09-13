@@ -125,8 +125,9 @@
       }
     }
     h1 {
-      min-height: calc(5.4rem * 4.5);
+      min-height: calc(5.4rem * 3.7);
       font-size: 5.4rem;
+      line-height: 1.2;
     }
   }
 }
@@ -134,6 +135,19 @@
 @media (min-width: map-get($breakpoints, desktop)) {
   .home {
     @include section('desktop');
+    &_container {
+      &_left {
+        width: 50%;
+      }
+      &_right {
+        width: 50%;
+      }
+    }
+    h1 {
+      min-height: calc(7.2rem * 3.7);
+      font-size: 7.2rem;
+      line-height: 1.2;
+    }
   }
 }
 
