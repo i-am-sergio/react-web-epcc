@@ -6,13 +6,23 @@
     padding-top: 20px;
     padding-left: 25px;
     font-size: larger;
+    white-space: nowrap;
+}
+
+.unsa-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .footer-container {
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    align-items: flex-start;
+    width: 75%;
   }
+
+
 
 @media screen and (max-width: 768px) {
     .unsa-container{
@@ -20,12 +30,25 @@
         justify-content: center;
         align-items: center; /* Alinea verticalmente al centro */
         width: 100%;
+        text-align: center;
         padding-top: 40px;
         padding-bottom: 40px;
     }
+    .txt-img-unsa{
+        padding-top: 20px;
+        text-align: center;
+        padding-left: 25px;
+        font-size: larger;
+        white-space: nowrap;
+    }
     .footer-container {
+        display: flex;
         flex-direction: column;
-        text-align: center; 
-        padding: 40px 0;
+        align-items: center; /* Alinea verticalmente al centro */
+        justify-content: center;
+        width: 100%;
+        text-align: center;
+        padding-top: 40px;
+        padding-bottom: 40px;
       }
 }
