@@ -7,7 +7,7 @@ const InfoCard = ({ icon, title, content, index }) => (
       <div className={`w-[64px] h-[64px] rounded-full ${styles.flexCenter} bg-dimBlue`}>
         <BsCode className="featuredCard-icon"/>
       </div>
-      <div className="flex-1 flex flex-col ml-3">
+      <div className="flex-1 flex flex-col ml-8">
         <h4 className="font-poppins font-semibold text-white text-[18px] leading-[23.4px] mb-1">
           {title}
         </h4>

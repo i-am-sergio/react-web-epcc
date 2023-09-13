@@ -6,6 +6,7 @@ $colors: (
 
 $background: (
   fondo_gradiente: #222E50,
+  seccion-oscuro: rgba(0, 0, 0, 0.50),
 );
 
 //font colors
@@ -18,5 +19,6 @@ $breakpoints: (
   tablet: 768px,
   laptop: 1024px,
   desktop: 1920px,
+  wide: 2560px,
 );
 

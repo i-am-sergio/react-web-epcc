@@ -7,8 +7,11 @@ $padding-Y-tablet: 24px;
 $padding-X-laptop: 64px;
 $padding-Y-laptop: 32px;
 
-$padding-X-desktop: 128px;
+$padding-X-desktop: 96px;
 $padding-Y-desktop: 32px;
+
+$padding-X-wide: 128px;
+$padding-Y-wide: 32px;
 
 
 @mixin section($size: mobile) {
@@ -24,5 +27,8 @@ $padding-Y-desktop: 32px;
     }
     @else if($size == "desktop") {
         padding: $padding-Y-desktop $padding-X-desktop;
+    }
+    @else if($size == "wide") {
+        padding: $padding-Y-wide $padding-X-widee;
     }
 }
