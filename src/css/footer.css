@@ -8,6 +8,12 @@
     font-size: larger;
 }
 
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
 @media screen and (max-width: 768px) {
     .unsa-container{
         display: flex;
@@ -17,8 +23,9 @@
         padding-top: 40px;
         padding-bottom: 40px;
     }
-    .img-unsa{
-        /* height: 80%; */
-        /* align-content: center; */
-    }
+    .footer-container {
+        flex-direction: column;
+        text-align: center; 
+        padding: 40px 0;
+      }
 }
