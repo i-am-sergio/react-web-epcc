@@ -8,50 +8,41 @@ const Navbar = () => {
   const [active, setActive] = useState("Home");
   const [toggle, setToggle] = useState(false);
 
-  const btnStyle = {
-    backgroundColor: "#4ff540",
-    color: "white",
-    padding: "10px",
-    // textAlign: 'center'
-  };
-
   return (
-    <nav
-      id="navbar"
-      className="w-full flex py-6 justify-between navbar"
-    >
+    <nav id="navbar" className="w-full flex py-6 justify-between navbar">
       <div className="flex py-6 justify-between container-nav">
         <img src={logo} alt="EPCC" className="h-[25px] logocs" />
 
         {/* <div> */}
-          <ul className="list-none sm:flex hidden justify-end items-center flex-1">
-            {navLinks.map((nav, index) => (
-              <li
-                key={nav.id}
-                className={`font-poppins font-normal cursor-pointer text-[16px] ${
-                  active === nav.title ? "text-white" : "text-dimWhite"
-                } ${index === navLinks.length ? "mr-0" : "mr-10"}`}
-                onClick={() => setActive(nav.title)}
-              >
-                <a href={`#${nav.id}`}>{nav.title}</a>
-              </li>
-            ))}
-
+        <ul className="list-none sm:flex hidden justify-end items-center flex-1">
+          {navLinks.map((nav, index) => (
             <li
-              className={`font-poppins font-normal cursor-pointer text-[16px]
-              ${"text-dimWhite"} ${"mr-10"}`}
+              key={nav.id}
+              className={`font-poppins font-normal cursor-pointer text-[16px] ${
+                active === nav.title ? "text-white" : "text-dimWhite"
+              } ${index === navLinks.length ? "mr-0" : "mr-10"}`}
+              onClick={() => setActive(nav.title)}
             >
-              <a href="" target="blank" className="btn-registrate">
-                Registrate
-              </a>
+              <a href={`#${nav.id}`}>{nav.title}</a>
             </li>
-          </ul>
-        {/* </div> */}
+          ))}
 
+          <li
+            className={`font-poppins font-normal cursor-pointer text-[16px]
+              ${"text-dimWhite"} ${"mr-10"}`}
+          >
+            <a href="" target="blank" className="btn-registrate">
+              Registrate
+            </a>
+          </li>
+        </ul>
+        {/* </div> */}
       </div>
 
-
-      <div id="toggle-syles" className="sm:hidden flex flex-1 justify-end px-5 items-center">
+      <div
+        id="toggle-syles"
+        className="sm:hidden flex flex-1 justify-end px-5 items-center"
+      >
         <img
           src={toggle ? close : menu}
           alt="menu"
@@ -86,7 +77,6 @@ const Navbar = () => {
             </li>
           </ul>
         </div>
-        
       </div>
     </nav>
   );
