@@ -1,4 +1,4 @@
-import styles from "./style";
+// import styles from "./style";
 import _styles from "./styles/app.module.scss";
 import {
   About,
@@ -9,6 +9,7 @@ import {
   CTA,
   Footer,
   Navbar,
+  Navbar2,
   Stats,
   Testimonials,
   Hero,
@@ -20,17 +21,17 @@ import {
 
 const App = () => (
   <div className={_styles.App}>
+    <Navbar2 />
+    {/* <Navbar /> */}
     <Hero />
-
     <Stats />
     <About />
     <Activities />
-    
+
     <Ponentes />
     <Galeria />
     <CTA />
     <Footer />
-
   </div>
 );
 

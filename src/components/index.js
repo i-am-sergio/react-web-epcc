@@ -1,4 +1,5 @@
 import Navbar from "./Navbar";
+import Navbar2 from "./Navbar2";
 import Billing from "./Billing";
 import CardDeal from "./CardDeal";
 import Business from "./Business";
@@ -11,15 +12,15 @@ import Hero from "./Hero";
 import About from "./About";
 
 import Activities from "./Activities";
-import Cronograma from './Cronograma'
-import Mapa from "./Mapa"
-import Galeria from "./Galeria"
-import Ponentes from "./Ponentes"
-
+import Cronograma from "./Cronograma";
+import Mapa from "./Mapa";
+import Galeria from "./Galeria";
+import Ponentes from "./Ponentes";
 
 export {
   About,
   Navbar,
+  Navbar2,
   Billing,
   CardDeal,
   Business,
