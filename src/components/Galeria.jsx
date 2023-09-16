@@ -39,54 +39,53 @@ const Galeria = () => {
               <div className="row">
                   <div className="col-12">
                       <div className="skill-bx wow zoomIn">
-                        <h2 className={`${styles.heading2} text-center py-8 `}>Galeria de Fotos</h2>
                           <Carousel responsive={responsive} infinite={true} className="owl-carousel owl-theme skill-slider">
                             <div className="item relative h-[260px] group overflow-hidden">
                                 <img src={img1} className="w-full h-full object-cover transition-opacity duration-300 group-hover:opacity-20"/>
                                 <div className="absolute inset-0 flex items-center justify-center opacity-0 transition-opacity duration-300 group-hover:opacity-100">
-                                <h5 className="text-white">Web Development</h5>
+                                <h5 className="text-white">Concepto 3D de nuestro pabellón Alan Turing</h5>
                                 </div>
                             </div>
                             <div className="item relative h-[260px] group overflow-hidden">
                                 <img src={img2} className="w-full h-full object-cover transition-opacity duration-300 group-hover:opacity-20"/>
                                 <div className="absolute inset-0 flex items-center justify-center opacity-0 transition-opacity duration-300 group-hover:opacity-100">
-                                <h5 className="text-white">Brand Identity</h5>
+                                <h5 className="text-white">Pabellón Alan Turing</h5>
                                 </div>
                             </div>
                             <div className="item relative h-[260px] group overflow-hidden">
                                 <img src={img3} className="w-full h-full object-cover transition-opacity duration-300 group-hover:opacity-20"/>
                                 <div className="absolute inset-0 flex items-center justify-center opacity-0 transition-opacity duration-300 group-hover:opacity-100">
-                                <h5 className="text-white">Logo Design</h5>
+                                <h5 className="text-white">Pabellón Alan Turing</h5>
                                 </div>
                             </div>
                             <div className="item relative h-[260px] group overflow-hidden">
                                 <img src={img4} className="w-full h-full object-cover transition-opacity duration-300 group-hover:opacity-20"/>
                                 <div className="absolute inset-0 flex items-center justify-center opacity-0 transition-opacity duration-300 group-hover:opacity-100">
-                                <h5 className="text-white">Web Development</h5>
+                                <h5 className="text-white">Docentes</h5>
                                 </div>
                             </div>
                             <div className="item relative h-[260px] group overflow-hidden">
                                 <img src={img5} className="w-full h-full object-cover transition-opacity duration-300 group-hover:opacity-20"/>
                                 <div className="absolute inset-0 flex items-center justify-center opacity-0 transition-opacity duration-300 group-hover:opacity-100">
-                                <h5 className="text-white">Web Development</h5>
+                                <h5 className="text-white">Explorando Realidad Virtual</h5>
                                 </div>
                             </div>
                             <div className="item relative h-[260px] group overflow-hidden">
                                 <img src={img6} className="w-full h-full object-cover transition-opacity duration-300 group-hover:opacity-20"/>
                                 <div className="absolute inset-0 flex items-center justify-center opacity-0 transition-opacity duration-300 group-hover:opacity-100">
-                                <h5 className="text-white">Web Development</h5>
+                                <h5 className="text-white">Familia Computer Science</h5>
                                 </div>
                             </div>
                             <div className="item relative h-[260px] group overflow-hidden">
                                 <img src={img7} className="w-full h-full object-cover transition-opacity duration-300 group-hover:opacity-20"/>
                                 <div className="absolute inset-0 flex items-center justify-center opacity-0 transition-opacity duration-300 group-hover:opacity-100">
-                                <h5 className="text-white">Web Development</h5>
+                                <h5 className="text-white">Nuestros laboratorios</h5>
                                 </div>
                             </div>
                             <div className="item relative h-[260px] group overflow-hidden">
                                 <img src={img8} className="w-full h-full object-cover transition-opacity duration-300 group-hover:opacity-20"/>
                                 <div className="absolute inset-0 flex items-center justify-center opacity-0 transition-opacity duration-300 group-hover:opacity-100">
-                                <h5 className="text-white">Web Development</h5>
+                                <h5 className="text-white">Familia Computer Science</h5>
                                 </div>
                             </div>
                             </Carousel>

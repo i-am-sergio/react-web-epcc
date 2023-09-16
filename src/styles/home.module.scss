@@ -4,9 +4,10 @@
 
 .home {
   @include section;
-  padding-top: calc($navbar-height + $padding-X-mobile);
+  padding-top: 24px;
   flex-direction: column;
   color: $font-color-light;
+  height: calc(100vh - 70px);
 
   &_container {
     &_left {
@@ -54,7 +55,6 @@
 @media (min-width: map-get($breakpoints, tablet)) {
   .home {
     @include section('tablet');
-    padding-top: calc($navbar-height + $padding-X-tablet);
     flex-direction:column;
     gap: 0;
     &_container {
@@ -99,7 +99,6 @@
 @media (min-width: map-get($breakpoints, laptop)) {
   .home {
     @include section('laptop');
-    padding-top: calc($navbar-height + 16px);
     flex-wrap: nowrap;
     flex-direction:row;
     height: auto;
