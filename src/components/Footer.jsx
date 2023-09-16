@@ -6,7 +6,7 @@ import "../css/footer.css";
 const Footer = () => (
   <section className={`${styles.flexCenter} ${styles.paddingY} flex-col`}>
     <div className={`flex ${styles.flexStart} flex-col md:flex-row mb-8 w-full justify-between`}>
-      <div className={`${styles.paddingX} flex-[1] flex flex-col mr-10 unsa-container`}>
+      <div className={`sm:px-16 px-6 flex-[1] flex flex-col mr-10 unsa-container`}>
         <img
           src={unsa}
           alt="hoobank"
@@ -18,11 +18,11 @@ const Footer = () => (
         </p>
       </div>
 
-      <div className={`sm:px-20 px-6 flex flex-col  footer-container md:flex-row md:justify-between`}>
+      <div className={`sm:px-20 px-6 flex  footer-container md:flex-row md:justify-between`}>
         {footerLinks.map((footerlink) => (
           <div
             key={footerlink.title}
-            className={`${styles.paddingX} flex flex-col ss:my-0 my-4 min-w-[150px]`}
+            className={`$sm:px-16 px-6 flex flex-col ss:my-0 my-4`}
           >
             <h4 className="font-poppins font-medium text-[18px] leading-[27px] text-white">
               {footerlink.title}
