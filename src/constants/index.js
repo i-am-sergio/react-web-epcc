@@ -127,7 +127,7 @@ export const footerLinks = [
       },
       {
         name: "Braulio Maldonado",
-        link: "https://github.com/",
+        link: "https://github.com/ShinjiMC",
       },
       {
         name: "Braulio Maldonado1",
@@ -190,7 +190,7 @@ export const socialMedia = [
   {
     id: "social-media-4",
     icon: linkedin,
-    link: "https://www.linkedin.com/",
+    link: "https://www.linkedin.com/school/universidad-nacional-de-san-agustin-de-arequipa/",
   },
 ];
 

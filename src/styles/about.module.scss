@@ -1,0 +1,73 @@
+@import "./Utils/constants.scss";
+@import "./utils/layouts";
+@import "./utils/blocks";
+@import "./utils/fonts";
+
+.about {
+    @include section;
+    flex-direction: column;
+    h2 {
+        @include block-title-center;
+    }
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+
+    &_icons {
+        display: flex;
+        justify-content: space-between;
+        padding: 32px 16px 0 16px;
+    }
+    &_right {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+@media (min-width: map-get($breakpoints, tablet)) {
+    .about {
+        @include section('tablet');
+    }
+    .container {
+        &_icons {
+            padding: 40px 156px;
+        }
+    }
+}
+
+@media (min-width: map-get($breakpoints, laptop)) {
+    .about {
+        @include section('laptop');
+    }
+    
+    .container {
+        display: flex;
+        flex-direction: row;
+        gap: 64px;
+        &_left {
+            display: flex;
+            flex-direction: column;
+            flex: 1;
+            margin: auto 0;
+            gap: 32px;
+        }
+        &_right {
+            flex: 1;
+        }
+        &_icons {
+            width: 100%;
+            justify-content: left;
+            gap:32px;
+            padding: 40px 8px;
+        }
+    }    
+}
+
+@media (min-width: map-get($breakpoints, desktop)) {
+    .about {
+        @include section('desktop');
+    }
+}

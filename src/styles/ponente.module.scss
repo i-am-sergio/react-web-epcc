@@ -1,0 +1,28 @@
+@import "./Utils/constants.scss";
+@import "./utils/layouts";
+@import "./utils/blocks";
+
+.ponente {
+    padding: $padding-Y-mobile $padding-X-mobile;
+    h2 {
+        @include block-title-center;
+    }
+}
+
+@media (min-width: map-get($breakpoints, tablet)) {
+    .ponente {
+        padding: $padding-Y-tablet $padding-X-tablet;
+    }
+}
+
+@media (min-width: map-get($breakpoints, laptop)) {
+    .ponente {
+        padding: $padding-Y-laptop $padding-X-laptop;
+    }
+}
+
+@media (min-width: map-get($breakpoints, desktop)) {
+    .ponente {
+        padding: $padding-Y-desktop $padding-X-desktop;
+    }
+}

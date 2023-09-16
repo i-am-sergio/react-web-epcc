@@ -1,0 +1,61 @@
+@import "./Utils/constants.scss";
+@import "./Utils/_fonts.scss";
+
+.titleCard {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-right: 11px;
+    margin-bottom: 9px;
+    padding: 32px 16px;
+    gap: 8px;
+    border-radius: 8px;
+    text-align: center;
+    background: map-get($background, fondo_gradiente);
+    box-shadow: 9px 11px 0px 0px map-get($colors, terciario);
+
+    h3 {
+        color: map-get($colors, secundario);
+    }
+    
+    a {
+        text-decoration: underline;
+    }
+      
+    a:hover {
+        color: map-get($colors, terciario);
+        transition-duration: 0.5s;
+        transform: scale(1.20);
+    }
+}
+
+@media (min-width: map-get($breakpoints, tablet)) {
+    .titleCard {
+        gap: 16px;
+        width: 40%;
+    }
+}
+
+@media (min-width: map-get($breakpoints, laptop)) {
+    .titleCard {
+        flex: 1;
+        justify-content: space-between;
+        width: 29%;
+        h3 {
+            @include body-large();
+            margin-bottom: auto;
+        }
+
+        a {
+            margin-top: auto;
+        }
+    }
+}
+
+@media (min-width: map-get($breakpoints, desktop)) {
+    .titleCard {
+        h3 {
+            @include subtitle("laptop");
+        }
+    }
+}

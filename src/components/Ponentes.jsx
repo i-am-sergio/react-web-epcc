@@ -4,9 +4,9 @@ import 'swiper/css';
 import 'swiper/css/effect-coverflow';
 import 'swiper/css/pagination';
 import 'swiper/css/navigation';
-
+import _styles from "../styles/ponente.module.scss";
 import '../css/ponentes.css';
-import styles from "../style";
+
 
 import { EffectCoverflow, Pagination, Navigation } from 'swiper/modules';
 
@@ -14,8 +14,8 @@ import wilber from '../assets/wilber-ramos.jpg';
 
 function Ponentes() {
   return (
-    <div className="container">
-      <h2 className={styles.heading2}>Ponentes</h2>
+    <section className={_styles.ponente}>
+      <h2>Ponentes</h2>
       <Swiper
         effect={'coverflow'}
         grabCursor={true}
@@ -72,7 +72,7 @@ function Ponentes() {
           <div className="swiper-pagination"></div>
         </div>
       </Swiper>
-    </div>
+    </section>
   );
 }
 

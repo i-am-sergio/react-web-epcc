@@ -1,6 +1,7 @@
-import styles from "./style";
-import "./css/App.css";
+// import styles from "./style";
+import _styles from "./styles/app.module.scss";
 import {
+  About,
   Billing,
   Business,
   CardDeal,
@@ -8,6 +9,7 @@ import {
   CTA,
   Footer,
   Navbar,
+  Navbar2,
   Stats,
   Testimonials,
   Hero,
@@ -18,35 +20,18 @@ import {
 } from "./components";
 
 const App = () => (
-  <div className="bg-primary w-full overflow-hidden ">
-    <div className={`${styles.paddingX} ${styles.flexCenter}`}>
-      <div className={`${styles.boxWidth} flex items-center justify-center text-center`}>
-        <Navbar />
-      </div>
-    </div>
+  <div className={_styles.App}>
+    <Navbar2 />
+    {/* <Navbar /> */}
+    <Hero />
+    <Stats />
+    <About />
+    <Activities />
 
-    <div className={`bg-primary ${styles.flexStart} home`}>
-      <div className={`${styles.boxWidth}`}>
-        <Hero />
-      </div>
-    </div>
-
-    <div className={`bg-primary ${styles.paddingX} ${styles.flexCenter}`}>
-      <div className={`${styles.boxWidth}`}>
-        <Stats />
-        <Business />
-        <Activities />
-        <Cronograma />
-        {/* <Billing /> */}
-        {/* <CardDeal /> */}
-        {/* <Testimonials /> */}
-        {/* <Clients /> */}
-        <Ponentes />
-        <Galeria />
-        <CTA />
-        <Footer />
-      </div>
-    </div>
+    <Ponentes />
+    <Galeria />
+    <CTA />
+    <Footer />
   </div>
 );
 

@@ -1,0 +1,94 @@
+%equal-fonts-propierties {
+    font-family: sans-serif;
+}
+
+
+//@extend %equal-fonts-propierties;
+
+
+$fs-title-mobile: 1.75rem;
+$fs-title-tablet: 4.75rem;
+$fs-title-laptop: 8.0rem;
+
+$fs-display-mobile: 4.00rem;
+$fs-display-tablet: 4.75rem;
+$fs-display-laptop: 8.0rem;
+
+
+@mixin caption {
+    font-size: 0.75rem; /* 12px */
+    line-height: 1.33; /* 16px */
+}
+
+@mixin body() {
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.43;
+    font-size: 1.4rem;
+}
+  
+
+@mixin body-strong() {
+    font-style: normal;
+    font-weight: 600;
+    line-height: 1.43;
+    font-size: 1.4rem;
+}
+  
+@mixin body-large {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 1.6rem; /* 18px */
+    line-height: 1.33; /* 24px */
+}
+  
+@mixin subtitle($size: mobile) {
+    line-height: 1.4; /* 28px */
+    font-style: normal;
+    font-weight: 600;
+
+    @if($size == "mobile") {
+        font-size: 6vw;
+    }
+    @if($size == "tablet") {
+        font-size: 4vw;
+    }
+    @if($size == "laptop") {
+        font-size: 2.75rem;
+    }
+}
+  
+@mixin title($size: mobile) {
+    font-style: normal;
+    font-weight: 600;
+    line-height: 1.29;
+    @if($size == "mobile") {
+        font-size: 10vw;
+    }
+    @else if($size == "tablet") {
+        font-size: 6vw;
+    }
+    @else if($size == "laptop") {
+        font-size: 2.75rem;
+    }
+}
+ 
+@mixin title-large {
+    font-size: 4.8rem; /* 40px */
+    line-height: 1.3; /* 52px */
+}
+
+@mixin display($size: mobile) {
+    font-style: normal;
+    font-weight: 600;
+    line-height: 1.47;
+    @if($size == "mobile") {
+        font-size: $fs-display-mobile; 
+    }
+    @else if($size == "tablet") {
+        font-size: 6.25rem;
+    }
+    @else if($size == "laptop") {
+        font-size: 6.25rem;
+    }
+}

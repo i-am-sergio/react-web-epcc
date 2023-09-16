@@ -1,0 +1,42 @@
+@import "./Utils/constants.scss";
+@import "./Utils/_fonts.scss";
+
+.App {
+    background: map-get($background, fondo_gradiente);
+    color: $font-color-light;
+    font-family: Poppins, sans-serif;
+    h2 {
+        @include title();
+        padding-bottom: 16px;
+    }
+    h3 {
+        @include subtitle();
+    }
+    p {
+        @include body();
+        color: rgba(255, 255, 255, 0.7);
+    }
+}
+
+@media (min-width: map-get($breakpoints, tablet)) {
+    .App {
+        h2 {
+            @include title("tablet");
+        }
+        h3 {
+            @include subtitle("tablet");
+        }
+    }
+}
+
+@media (min-width: map-get($breakpoints, laptop)) {
+    .App {
+        h2 {
+            @include title("laptop");
+            padding-bottom: 32px;
+        }
+        h3 {
+            @include subtitle("laptop");
+        }
+    }
+}

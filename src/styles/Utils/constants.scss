@@ -1,0 +1,24 @@
+$colors: (
+  principal: red,
+  secundario: #7FFF00,
+  terciario: #edd819,    
+);
+
+$background: (
+  fondo_gradiente: #222E50,
+  seccion-oscuro: rgba(0, 0, 0, 0.50),
+);
+
+//font colors
+$font-color-light: #f6f8ff;
+
+$navbar-height: 54px;
+
+$breakpoints: (
+  mobile: 375px,
+  tablet: 768px,
+  laptop: 1024px,
+  desktop: 1920px,
+  wide: 2560px,
+);
+
