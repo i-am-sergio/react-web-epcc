@@ -30,13 +30,17 @@ const Activities = () => {
   ];
 
   return (
-    <section className={_styles.activities}>
+    <section id="actividades" className={_styles.activities}>
       <h2>Actividades</h2>
       <div className={_styles.container}>
         {actividades.map((activ) => (
-          <TitleCard id={activ.id} color={activ.color} title={activ.title} link={activ.link} />
-        ))
-        }
+          <TitleCard
+            id={activ.id}
+            color={activ.color}
+            title={activ.title}
+            link={activ.link}
+          />
+        ))}
       </div>
     </section>
   );

@@ -34,26 +34,42 @@ function Navbar2() {
   }, []);
 
   return (
-    <header style={navbarStyle}>
-      <h3>
-        <img src={logo} alt="EPCC" className="h-[20px] logocs" />
-      </h3>
-      <nav ref={navRef}>
-        <a href="/#">Inicio</a>
-        <a href="/#">About</a>
-        <a href="/#">Actividades</a>
-        <a href="/#">Cronograma</a>
+    <div id="nav">
+      <header style={navbarStyle}>
+        <h3>
+          <img src={logo} alt="EPCC" className="h-[20px] logocs" />
+        </h3>
+        <nav ref={navRef}>
+          <a href="#" className="font-poppins">
+            Inicio
+          </a>
+          <a href="#about" className="font-poppins">
+            About
+          </a>
+          <a href="#actividades" className="font-poppins">
+            Actividades
+          </a>
+          <a href="#organizacion" className="font-poppins">
+            Organizacion
+          </a>
+          <a href="#ubicacion" className="font-poppins">
+            Ubicacion
+          </a>
+          <button
+            className="nav-btn nav-close-btn third-element"
+            onClick={showNavbar}
+          >
+            <FaTimes />
+          </button>
+        </nav>
         <button
-          className="nav-btn nav-close-btn third-element"
+          className="nav-btn third-element showToggle"
           onClick={showNavbar}
         >
-          <FaTimes />
+          <FaBars />
         </button>
-      </nav>
-      <button className="nav-btn third-element showToggle" onClick={showNavbar}>
-        <FaBars />
-      </button>
-    </header>
+      </header>
+    </div>
   );
 }
 
