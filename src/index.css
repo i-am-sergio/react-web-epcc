@@ -326,3 +326,20 @@ body {
 .swiper-pagination .swiper-pagination-bullet-active {
   background: var(--primary);
 }
+
+
+#about {
+  padding-top: 120px;
+}
+
+#actividades {
+  padding-top: 100px;
+}
+
+#organizacion {
+  padding-top: 100px;
+}
+
+#ubicacion {
+  padding-top: 100px;
+}

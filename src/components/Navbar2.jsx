@@ -40,19 +40,19 @@ function Navbar2() {
           <img src={logo} alt="EPCC" className="h-[20px] logocs" />
         </h3>
         <nav ref={navRef}>
-          <a href="#" className="font-poppins">
+          <a href="#" className="font-poppins" onClick={showNavbar}>
             Inicio
           </a>
-          <a href="#about" className="font-poppins">
+          <a href="#about" className="font-poppins" onClick={showNavbar}>
             About
           </a>
-          <a href="#actividades" className="font-poppins">
+          <a href="#actividades" className="font-poppins" onClick={showNavbar}>
             Actividades
           </a>
-          <a href="#organizacion" className="font-poppins">
-            Organizacion
+          <a href="#organizacion" className="font-poppins" onClick={showNavbar}>
+            Ponentes
           </a>
-          <a href="#ubicacion" className="font-poppins">
+          <a href="#ubicacion" className="font-poppins" onClick={showNavbar}>
             Ubicacion
           </a>
           <button
