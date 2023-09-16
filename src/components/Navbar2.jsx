@@ -44,13 +44,10 @@ function Navbar2() {
             Inicio
           </a>
           <a href="#about" className="font-poppins" onClick={showNavbar}>
-            About
+            Sobre
           </a>
           <a href="#actividades" className="font-poppins" onClick={showNavbar}>
             Actividades
-          </a>
-          <a href="#organizacion" className="font-poppins" onClick={showNavbar}>
-            Ponentes
           </a>
           <a href="#ubicacion" className="font-poppins" onClick={showNavbar}>
             Ubicacion
