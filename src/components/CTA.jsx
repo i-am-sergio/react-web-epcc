@@ -34,7 +34,7 @@ const componentArray = [ComponentA, ComponentB];
 
 
 const CTA = () => (
-  <div className={`${styles.marginY} ${styles.padding} sm:flex-row flex-col bg-black-gradient-2 rounded-[10px] box-shadow md:rounded-[50px]`}>
+  <div className={`${styles.marginY} ${styles.padding} sm:flex-row flex-col bg-black-gradient-3`}>
     <h2 className={`${styles.heading2} text-center pt-8 `}>Ubicacion</h2>
     <section className={`${styles.flexCenter}  sm:flex-row flex-col rounded-[20px]`}>
       <div className="flex-1 flex flex-col">
@@ -47,7 +47,7 @@ const CTA = () => (
         ))}
       </div>
       </div>
-      <div className={`${styles.flexCenter} sm:ml-10 ml-0 sm:mt-0 mt-10 rounded-[50px]`}>
+      <div className={`${styles.flexCenter} sm:ml-10 ml-0 sm:mt-0 mt-10 rounded-[10px]`}>
         <Mapa />
       </div>
     </section>

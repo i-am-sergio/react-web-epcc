@@ -59,6 +59,10 @@
   );
 }
 
+.bg-black-gradient-3 {
+  background: rgb(20, 20, 45);
+}
+
 .bg-gray-gradient {
   background: linear-gradient(
     153.47deg,
