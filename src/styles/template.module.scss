@@ -1,14 +1,27 @@
 @import "./Utils/constants.scss";
-@import "./Utils/_fonts.scss";
+@import "./Utils/_layouts.scss";
+@import "./utils/blocks";
 
 // Usar mobile first. :D
 // Parte definiendo los estilos para version mobile.
 
 .contenedor {
+    // importar los paddings de la vista mobile
+    @include section();
 
+    // especificamente, para cada seccion el titulo debe 
+    // tener el estilo
+    h2 {
+        @include block-title-center;
+    }
+    
+    // formas de usar variables:
+    // ez
+    color: $font-color-light;
+    // De una clase
+    background-color: map-get($background, seccion-oscuro);
 
     p { // equivale a ".contenedor p"
-        color: $font-color-light;
     }
 
     .contenedor2 { //equivale a .contenedor_container
@@ -25,10 +38,13 @@
 // No es necesario usar todos los media queries.
 
 @media (min-width: map-get($breakpoints, tablet)) {
+    @include section('tablet');
 }
 
 @media (min-width: map-get($breakpoints, laptop)) {
+    @include section('laptop');
 }
 
 @media (min-width: map-get($breakpoints, desktop)) {
+    @include section('desktop');
 }
