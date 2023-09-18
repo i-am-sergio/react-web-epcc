@@ -6,7 +6,7 @@ const Stats = () => (
     {stats.map((stat) => (
       <div key={stat.id} className={`${styles2.stat_item} m-3`} >
         <h4>{stat.value}</h4>
-        <p>{stat.title}</p>
+        <p className={window.innerWidth < 768 ? "break-word" : ""}>{stat.title}</p>
       </div>
     ))}
   </section>
