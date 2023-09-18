@@ -327,19 +327,6 @@ body {
   background: var(--primary);
 }
 
-
-#about {
-  padding-top: 120px;
-}
-
-#actividades {
-  padding-top: 100px;
-}
-
-#organizacion {
-  padding-top: 100px;
-}
-
-#ubicacion {
-  padding-top: 100px;
+#about, #actividades, #organizacion, #ubicacion {
+  scroll-margin-top: 4.5em;
 }
