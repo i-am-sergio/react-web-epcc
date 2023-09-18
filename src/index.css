@@ -303,3 +303,7 @@ body {
 .swiper-pagination .swiper-pagination-bullet-active {
   background: var(--primary);
 }
+
+#about, #actividades, #organizacion, #ubicacion {
+  scroll-margin-top: 4.5em;
+}

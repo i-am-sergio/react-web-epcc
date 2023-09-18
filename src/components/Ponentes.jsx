@@ -1,37 +1,36 @@
-import { Swiper, SwiperSlide } from 'swiper/react';
+import { Swiper, SwiperSlide } from "swiper/react";
 
-import 'swiper/css';
-import 'swiper/css/effect-coverflow';
-import 'swiper/css/pagination';
-import 'swiper/css/navigation';
+import "swiper/css";
+import "swiper/css/effect-coverflow";
+import "swiper/css/pagination";
+import "swiper/css/navigation";
 import _styles from "../styles/ponente.module.scss";
-import '../css/ponentes.css';
+import "../css/ponentes.css";
 
+import { EffectCoverflow, Pagination, Navigation } from "swiper/modules";
 
-import { EffectCoverflow, Pagination, Navigation } from 'swiper/modules';
-
-import wilber from '../assets/wilber-ramos.jpg';
+import wilber from "../assets/wilber-ramos.jpg";
 
 function Ponentes() {
   return (
-    <section className={_styles.ponente}>
+    <section id="organizacion" className={_styles.ponente}>
       <h2>Ponentes</h2>
       <Swiper
-        effect={'coverflow'}
+        effect={"coverflow"}
         grabCursor={true}
         centeredSlides={true}
         loop={true}
-        slidesPerView={'auto'}
+        slidesPerView={"auto"}
         coverflowEffect={{
           rotate: 0,
           stretch: 0,
           depth: 100,
           modifier: 2.5,
         }}
-        pagination={{ el: '.swiper-pagination', clickable: true }}
+        pagination={{ el: ".swiper-pagination", clickable: true }}
         navigation={{
-          nextEl: '.swiper-button-next',
-          prevEl: '.swiper-button-prev',
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
           clickable: true,
         }}
         modules={[EffectCoverflow, Pagination, Navigation]}
@@ -76,4 +75,4 @@ function Ponentes() {
   );
 }
 
-export default Ponentes
+export default Ponentes;
