@@ -29,6 +29,6 @@ $padding-Y-wide: 32px;
         padding: $padding-Y-desktop $padding-X-desktop;
     }
     @else if($size == "wide") {
-        padding: $padding-Y-wide $padding-X-widee;
+        padding: $padding-Y-wide $padding-X-wide;
     }
 }
