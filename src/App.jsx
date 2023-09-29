@@ -27,6 +27,7 @@ const App = () => (
     <Stats />
     <About />
     <Activities />
+    <Cronograma />
     <Galeria />
     <CTA />
     <Footer />
