@@ -1,5 +1,4 @@
-import { discount, robot } from "../assets";
-import GetStarted from "./GetStarted";
+import { robot } from "../assets";
 import Contador from "./Contador";
 import { useEffect, useState } from "react";
 
@@ -52,8 +51,8 @@ const Hero = () => {
           <p> 09 AL 13 DE OCTUBRE<br />
               UNSA - PABELLON DE CIENCIA DE LA
               COMPUTACION
-          <hr />
           </p>
+          <hr />
           <h1>SEMANA DE LA<br/><span>COMPUTACI&Oacute;N</span><br/>{text}</h1>
         </div>
         <Contador />
