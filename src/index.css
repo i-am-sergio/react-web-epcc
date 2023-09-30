@@ -26,7 +26,7 @@
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
-  text-fill-color: transparent;
+  /* text-fill-color: transparent; */
 }
 
 .bg-blue-gradient {
@@ -304,6 +304,6 @@ body {
   background: var(--primary);
 }
 
-#about, #actividades, #organizacion, #ubicacion {
+#about, #actividades, #organizacion, #ubicacion, #cronograma {
   scroll-margin-top: 4.5em;
 }

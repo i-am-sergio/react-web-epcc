@@ -1,6 +1,6 @@
 import { useRef, useState, useEffect } from "react";
 import { FaBars, FaTimes } from "react-icons/fa";
-import { logo } from "../assets";
+import { logoeditado1 } from "../assets";
 import "../css/navbar2.css";
 
 function Navbar2() {
@@ -37,7 +37,7 @@ function Navbar2() {
     <div id="nav">
       <header style={navbarStyle}>
         <h3>
-          <img src={logo} alt="EPCC" className="h-[20px] logocs" />
+          <img src={logoeditado1} alt="EPCC" className="h-[20px] logocs" />
         </h3>
         <nav ref={navRef}>
           <a href="#" className="font-poppins" onClick={showNavbar}>
@@ -48,6 +48,9 @@ function Navbar2() {
           </a>
           <a href="#actividades" className="font-poppins" onClick={showNavbar}>
             Actividades
+          </a>
+          <a href="#cronograma" className="font-poppins" onClick={showNavbar}>
+            Cronograma
           </a>
           <a href="#ubicacion" className="font-poppins" onClick={showNavbar}>
             Ubicacion
