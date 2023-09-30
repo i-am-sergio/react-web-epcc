@@ -50,8 +50,8 @@ const Hero = () => {
       <div className={styles.home_container_left}>
         <div className={styles.home_text}>
           <p> 09 AL 13 DE OCTUBRE<br />
-              UNSA - PABELLON DE CIENCIA DE LA
-              COMPUTACION
+              UNSA - PABELLÓN DE CIENCIA DE LA
+              COMPUTACIÓN
           <hr />
           </p>
           <h1>SEMANA DE LA<br/><span>COMPUTACI&Oacute;N</span><br/>{text}</h1>

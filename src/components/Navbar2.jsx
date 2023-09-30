@@ -50,7 +50,7 @@ function Navbar2() {
             Actividades
           </a>
           <a href="#ubicacion" className="font-poppins" onClick={showNavbar}>
-            Ubicacion
+            Ubicación
           </a>
           <button
             className="nav-btn nav-close-btn third-element"

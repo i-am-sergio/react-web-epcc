@@ -48,14 +48,14 @@ const CTA = () => (
     id="ubicacion"
     className={`${styles.marginY} ${styles.padding} sm:flex-row flex-col bg-black-gradient-2 rounded-[10px] box-shadow md:rounded-[50px]`}
   >
-    <h2 className={`${styles.heading2} text-center pt-8 `}>Ubicacion</h2>
+    <h2 className={`${styles.heading2} text-center pt-8 `}>Ubicación</h2>
     <section
       className={`${styles.flexCenter}  sm:flex-row flex-col rounded-[20px]`}
     >
       <div className="flex-1 flex flex-col">
         <p className={`${styles.paragraph} max-w-[470px] my-10 text-center`}>
-          UNIVERSIDAD NACIONAL DE SAN AGUSTIN, AREQUIPA <br /> PABELLON DE
-          CIENCIA DE LA COMPUTACION
+          UNIVERSIDAD NACIONAL DE SAN AGUSTÍN, AREQUIPA <br /> PABELLÓN DE
+          CIENCIA DE LA COMPUTACIÓN
         </p>
         <div className={`flex-col`}>
           {direcciones.map((feature, index) => (
