@@ -28,7 +28,7 @@ const Cronograma = ({_actividades, _color_label_event}) => {
             <button 
               key={actividad.fecha} 
               onClick={() => seleccionarFecha(actividad.fecha)}
-              className={fechaSeleccionada == actividad.fecha && _styles.button_focus }
+              className={fechaSeleccionada === actividad.fecha ? _styles.button_focus : ''}
             >
               <h3>{actividad.fecha}</h3>
               <hr/>
