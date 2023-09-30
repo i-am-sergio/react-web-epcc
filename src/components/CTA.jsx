@@ -1,10 +1,39 @@
-import styles from "../style";
+import styles, { layout } from "../style";
+import Button from "./Button";
 import Mapa from "./Mapa";
 import { direcciones } from "../constants";
 import { AiOutlineMail } from "react-icons/ai";
 import { HiOutlineLocationMarker } from "react-icons/hi";
-import _styles from "../styles/ubicacion.module.scss";
-import InfoCard from "./cards/InfoCard";
+
+const DireccionesCard = ({
+  title,
+  content,
+  index,
+  id,
+  contentComponent: MyIcon,
+}) => (
+  <div
+    className={`flex flex-row p-6 rounded-[20px] ${
+      index !== direcciones.length - 1 ? "mb-6" : "mb-0"
+    } feature-card`}
+  >
+    <div
+      className={`w-[64px] h-[64px] rounded-full ${styles.flexCenter} bg-dimBlue`}
+    >
+      <div>
+        <MyIcon />
+      </div>
+    </div>
+    <div className="flex-1 flex flex-col ml-3">
+      <h4 className="font-poppins font-semibold text-white text-[18px] leading-[23.4px] mb-1">
+        {title}
+      </h4>
+      <p className="font-poppins font-normal text-dimWhite text-[16px] leading-[24px]">
+        {content}
+      </p>
+    </div>
+  </div>
+);
 
 function ComponentA() {
   return <HiOutlineLocationMarker className="featuredCard-icon" />;
@@ -15,34 +44,37 @@ function ComponentB() {
 const componentArray = [ComponentA, ComponentB];
 
 const CTA = () => (
-  <section
+  <div
     id="ubicacion"
-    className={_styles.ubicacion}
+    className={`${styles.marginY} ${styles.padding} sm:flex-row flex-col bg-black-gradient-2 rounded-[10px] box-shadow md:rounded-[50px]`}
   >
-    <h2 className={`${styles.heading2} text-center pt-8 `}>Ubicación</h2>
+    <h2 className={`${styles.heading2} text-center pt-8 `}>Ubicacion</h2>
     <section
       className={`${styles.flexCenter}  sm:flex-row flex-col rounded-[20px]`}
     >
       <div className="flex-1 flex flex-col">
         <p className={`${styles.paragraph} max-w-[470px] my-10 text-center`}>
-          UNIVERSIDAD NACIONAL DE SAN AGUSTÍN, AREQUIPA <br /> PABELLÓN DE
-          CIENCIA DE LA COMPUTACIÓN
+          UNIVERSIDAD NACIONAL DE SAN AGUSTÍN, AREQUIPA <br /> PABELLON DE
+          CIENCIA DE LA COMPUTACION
         </p>
-        <div className={_styles.container}>
+        <div className={`flex-col`}>
           {direcciones.map((feature, index) => (
-              <InfoCard 
-                key={feature.id} 
-                {...feature} 
-                index={index} 
-                contentComponent={componentArray[index]}
-              />
-            ))}
-            </div>
+            <DireccionesCard
+              key={feature.id}
+              {...feature}
+              index={index}
+              contentComponent={componentArray[index]}
+            />
+          ))}
+        </div>
       </div>
-      <div className={_styles.mapa}>
+      <div
+        className={`${styles.flexCenter} sm:ml-10 ml-0 sm:mt-0 mt-10 rounded-[50px]`}
+      >
         <Mapa />
       </div>
-  </section>
+    </section>
+  </div>
 );
 
 export default CTA;
