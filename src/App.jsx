@@ -1,17 +1,12 @@
 // import styles from "./style";
 import _styles from "./styles/app.module.scss";
+import {data_color_label_event, data_actividades} from "./data/cronograma";
 import {
   About,
-  Billing,
-  Business,
-  CardDeal,
-  Clients,
   CTA,
   Footer,
-  Navbar,
   Navbar2,
   Stats,
-  Testimonials,
   Hero,
   Activities,
   Cronograma,
@@ -22,12 +17,11 @@ import {
 const App = () => (
   <div className={_styles.App}>
     <Navbar2 />
-    {/* <Navbar /> */}
     <Hero />
     <Stats />
     <About />
     <Activities />
-    <Cronograma />
+    <Cronograma _actividades={data_actividades} _color_label_event={data_color_label_event} />
     <Galeria />
     <CTA />
     <Footer />

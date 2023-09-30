@@ -35,7 +35,7 @@ $fs-display-laptop: 8.0rem;
     font-size: 1.4rem;
 }
   
-@mixin body-large {
+@mixin body-large() {
     font-style: normal;
     font-weight: 600;
     font-size: 1.6rem; /* 18px */

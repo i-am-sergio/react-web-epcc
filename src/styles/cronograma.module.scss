@@ -1,0 +1,144 @@
+@import "./Utils/constants.scss";
+@import "./Utils/_layouts.scss";
+@import "./utils/blocks";
+@import "./utils/fonts";
+
+
+.cronograma {
+    @include section();
+    flex-direction: column;
+    h2 {
+        @include block-title-center;
+    }
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.barra_botones {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+    gap: 8px;
+
+    button {
+        background-color: map-get($background, seccion-oscuro);
+        display: block;
+        min-width: 30%;
+        @include body-strong();
+
+        h3 {
+            padding: 8px 12px;
+        }
+        hr {
+            width: 100%;
+            height:4px;
+            border-width:0;
+        }
+    }
+
+    .button_focus {
+        hr {
+            background-color: map-get($colors, secundario);
+        }   
+    }
+}
+
+.lista_actividades {
+    display: flex;
+    ul, li{
+        width: 100%;
+    }
+    li {
+        display: flex;
+        flex-wrap: wrap;
+        margin-bottom: 16px;
+        
+    }
+    .hora {
+        display: block;
+        flex: 1;
+        min-width: 30%;
+        padding: 10px 10px;
+        @include body-strong();
+        color: map-get($background, fondo_gradiente);
+        background-color: map-get($colors, secundario);
+    }
+    .tipo {
+        text-align: end;
+        display: block;
+        min-width: 40%;
+        padding: 10px 10px;
+        margin-left: 8px;
+        @include body();
+        background-color: map-get($background, seccion-oscuro);
+    }
+    .info {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        padding: 16px 8px;
+        margin-top: 8px;
+    }
+    .titulo {
+        width: 100%;
+        @include body-large();
+    }
+    .descripcion {
+        width: 100%;
+        @include body-strong();
+    }
+    .ponente {
+        width: 100%;
+        @include body();
+    }
+
+}
+
+
+
+@media (min-width: map-get($breakpoints, tablet)) {
+    .cronograma {
+        @include section('tablet');
+    }
+
+    .barra_botones {
+        justify-content: center;
+        gap: 16px;
+
+        button {
+            min-width: 20%;
+        }
+    }  
+
+    .lista_actividades {
+        .hora {
+            min-width: 20%;
+        }
+    }
+}
+
+@media (min-width: map-get($breakpoints, laptop)) {
+    .cronograma {
+        @include section('laptop');
+    }
+    .barra_botones {
+        button {
+            min-width: 10%;
+        }
+    }  
+    .lista_actividades {
+        width: 60%;
+        margin: 0 auto;
+    }
+}
+
+@media (min-width: map-get($breakpoints, desktop)) {
+    .cronograma {
+        @include section('desktop');
+    }
+}

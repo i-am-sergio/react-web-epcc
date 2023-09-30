@@ -1,60 +1,9 @@
 import React, { useState, useEffect } from 'react';
+import _styles from "../styles/cronograma.module.scss";
 
-const Cronograma = () => {
-  const [fechaSeleccionada, setFechaSeleccionada] = useState(null);
-  const [actividades, setActividades] = useState([
-    {
-      fecha: '2023-09-26',
-      eventos: [
-        {
-          hora: '09:00',
-          titulo: 'Reunión',
-          descripcion: 'Reunión de equipo',
-          ponente: 'Juan Pérez',
-        },
-        {
-          hora: '10:30',
-          titulo: 'Presentación',
-          descripcion: 'Presentación de proyecto',
-          ponente: 'María González',
-        },
-      ],
-    },
-    {
-      fecha: '2023-09-27',
-      eventos: [
-        {
-          hora: '14:00',
-          titulo: 'Entrevista',
-          descripcion: 'Entrevista con candidato',
-          ponente: 'Luis Rodríguez',
-        },
-        {
-          hora: '16:30',
-          titulo: 'Capacitación',
-          descripcion: 'Capacitación de empleados',
-          ponente: 'Ana Martínez',
-        },
-      ],
-    },
-    {
-      fecha: '2023-09-28',
-      eventos: [
-        {
-          hora: '11:30',
-          titulo: 'Conferencia',
-          descripcion: 'Conferencia sobre tecnología',
-          ponente: 'Carlos Sánchez',
-        },
-        {
-          hora: '15:00',
-          titulo: 'Taller',
-          descripcion: 'Taller de diseño gráfico',
-          ponente: 'Elena López',
-        },
-      ],
-    },
-  ]);
+const Cronograma = ({_actividades, _color_label_event}) => {
+  const [actividades, setActividades] = useState(_actividades);
+  const [fechaSeleccionada, setFechaSeleccionada] = useState(_actividades[0].fecha);
 
   useEffect(() => {
     const cargarActividades = () => {
@@ -69,36 +18,47 @@ const Cronograma = () => {
   };
 
   return (
-    <section id="cronograma" className={`my-10 bg-gray-400 h-400`}>
+    <section id="cronograma" className={_styles.cronograma}>
       <h2>
         Cronograma
       </h2>
-      <div className="container">
-        <div className="barra-botones">
+      <div className= {_styles.container}>
+        <div className={_styles.barra_botones}>
           {actividades.map((actividad) => (
-            <button key={actividad.fecha} onClick={() => seleccionarFecha(actividad.fecha)}>
-              {actividad.fecha} |
+            <button 
+              key={actividad.fecha} 
+              onClick={() => seleccionarFecha(actividad.fecha)}
+              className={fechaSeleccionada == actividad.fecha && _styles.button_focus }
+            >
+              <h3>{actividad.fecha}</h3>
+              <hr/>
             </button>
           ))}
         </div>
-        <div className="lista-actividades">
+        <div className ={_styles.lista_actividades}>
         {fechaSeleccionada &&
           actividades
             .filter((actividad) => actividad.fecha === fechaSeleccionada)
             .map((actividad) => (
-              <div key={actividad.fecha}>
-                <h3>{actividad.fecha}</h3>
-                <ul>
+                <ul key={actividad.fecha}>
                   {actividad.eventos.map((evento, index) => (
                     <li key={index}>
-                      <span className="hora">{evento.hora}</span>
-                      <span className="titulo">{evento.titulo}</span>
-                      <span className="descripcion">{evento.descripcion}</span>
-                      <span className="ponente">Ponente: {evento.ponente}</span>
+                      <span className= {_styles.hora}>{evento.hora}</span>
+                      <span 
+                        className= {_styles.tipo}
+                        style={{backgroundColor:_color_label_event[evento.tipo]}}
+                      >{evento.tipo}</span>
+                      { ( evento.titulo || evento.ponente ) ?
+                        <div className= {_styles.info}>
+                          <span className= {_styles.titulo}><h4>{evento.titulo}</h4></span>
+                          <span className= {_styles.descripcion}>{evento.descripcion}</span>
+                          <span className= {_styles.ponente}>{evento.ponente}</span>
+                        </div>
+                        : null
+                      }
                     </li>
                   ))}
                 </ul>
-              </div>
             ))}
       </div>
     </div>
