@@ -49,14 +49,9 @@ const Hero = () => {
       <div className={styles.home_container_left}>
         <div className={styles.home_text}>
           <p> 09 AL 13 DE OCTUBRE<br />
-<<<<<<< HEAD
               UNSA - PABELLÓN DE CIENCIA DE LA
               COMPUTACIÓN
           <hr />
-=======
-              UNSA - PABELLON DE CIENCIA DE LA
-              COMPUTACION
->>>>>>> d3a220b6d36967d60b7b6a5eb3c444106c9be11b
           </p>
           <hr />
           <h1>SEMANA DE LA<br/><span>COMPUTACI&Oacute;N</span><br/>{text}</h1>

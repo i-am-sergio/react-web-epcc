@@ -19,7 +19,6 @@ const CTA = () => (
     id="ubicacion"
     className={_styles.ubicacion}
   >
-<<<<<<< HEAD
     <h2 className={`${styles.heading2} text-center pt-8 `}>Ubicación</h2>
     <section
       className={`${styles.flexCenter}  sm:flex-row flex-col rounded-[20px]`}
@@ -28,13 +27,6 @@ const CTA = () => (
         <p className={`${styles.paragraph} max-w-[470px] my-10 text-center`}>
           UNIVERSIDAD NACIONAL DE SAN AGUSTÍN, AREQUIPA <br /> PABELLÓN DE
           CIENCIA DE LA COMPUTACIÓN
-=======
-    <h2>Ubicaci&oacute;n</h2>
-      <div>
-        <p className={_styles.subtitle}>
-          UNIVERSIDAD NACIONAL DE SAN AGUSTIN, AREQUIPA <br /> PABELLON DE
-          CIENCIA DE LA COMPUTACION
->>>>>>> d3a220b6d36967d60b7b6a5eb3c444106c9be11b
         </p>
         <div className={_styles.container}>
           {direcciones.map((feature, index) => (
