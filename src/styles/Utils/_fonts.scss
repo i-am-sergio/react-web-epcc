@@ -48,13 +48,13 @@ $fs-display-laptop: 8.0rem;
     font-weight: 600;
 
     @if($size == "mobile") {
-        font-size: 6vw;
+        font-size: 5vw;
     }
     @if($size == "tablet") {
-        font-size: 4vw;
+        font-size: 3vw;
     }
     @if($size == "laptop") {
-        font-size: 2.75rem;
+        font-size: 2rem;
     }
 }
   

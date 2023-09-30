@@ -35,6 +35,7 @@ const Activities = () => {
       <div className={_styles.container}>
         {actividades.map((activ) => (
           <TitleCard
+          key={activ.id}
             id={activ.id}
             color={activ.color}
             title={activ.title}

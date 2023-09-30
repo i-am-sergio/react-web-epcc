@@ -1,17 +1,17 @@
 $padding-X-mobile: 16px;
-$padding-Y-mobile: 24px;
+$padding-Y-mobile: 32px;
 
 $padding-X-tablet: 32px;
-$padding-Y-tablet: 24px;
+$padding-Y-tablet: 64px;
 
 $padding-X-laptop: 64px;
 $padding-Y-laptop: 64px;
 
 $padding-X-desktop: 96px;
-$padding-Y-desktop: 32px;
+$padding-Y-desktop: 96px;
 
 $padding-X-wide: 128px;
-$padding-Y-wide: 32px;
+$padding-Y-wide: 96px; 
 
 
 @mixin section($size: mobile) {
