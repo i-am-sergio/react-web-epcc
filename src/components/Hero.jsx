@@ -51,7 +51,6 @@ const Hero = () => {
           <p> 09 AL 13 DE OCTUBRE<br />
               UNSA - PABELLÓN DE CIENCIA DE LA
               COMPUTACIÓN
-          <hr />
           </p>
           <hr />
           <h1>SEMANA DE LA<br/><span>COMPUTACI&Oacute;N</span><br/>{text}</h1>
