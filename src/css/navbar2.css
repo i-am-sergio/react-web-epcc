@@ -7,6 +7,29 @@
 	top: 0;
 }
 
+#btn-inscripcion {
+	width: 120px;
+	height: 30px;
+	text-align: center;
+	background-color: #73ff32;
+	margin-left: 10px;
+	margin-right: 0px;
+	display: flex;
+  	align-items: center;
+	justify-content: center;
+	border: 1px solid transparent;
+	border-radius: 10px;
+	color: #2a376d;
+	font-weight: 500;
+}
+
+#btn-inscripcion:hover {
+	background-color: transparent;
+	color: #73ff32;
+	border: 1px solid #73ff32;
+	transition: 0.4s;
+}
+
 :root {
 	--mainColor: #171c30;
 	--mainColorLight: #5767aa;
@@ -49,6 +72,7 @@ nav a {
 
 nav a:hover {
 	color: var(--secondaryColor);
+	transition: 0.8s;
 }
 
 header .nav-btn {
