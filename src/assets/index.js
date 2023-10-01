@@ -24,8 +24,10 @@ import people01 from "./people01.png";
 import people02 from "./people02.png";
 import people03 from "./people03.png";
 import unsa from "./unsa.svg";
-
 import logoeditado1 from "./editar.png";
+import nvidia from "./NVIDIA_gris.png"
+import paulonia from "./paulonia_gris.png"
+import ravn from "./RAVN_gris.svg"
 
 export {
   airbnb,
@@ -54,5 +56,8 @@ export {
   people02,
   people03,
   unsa,
-  logoeditado1
+  logoeditado1,
+  nvidia,
+  paulonia,
+  ravn,
 };

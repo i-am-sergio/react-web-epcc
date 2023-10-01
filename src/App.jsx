@@ -12,6 +12,7 @@ import {
   Cronograma,
   Galeria,
   Ponentes,
+  Sponsor,
 } from "./components";
 
 const App = () => (
@@ -24,6 +25,7 @@ const App = () => (
     <Cronograma _actividades={data_actividades} _color_label_event={data_color_label_event} />
     <Galeria />
     <CTA />
+    <Sponsor />
     <Footer />
   </div>
 );
