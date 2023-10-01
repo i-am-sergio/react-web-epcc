@@ -52,7 +52,13 @@ const Cronograma = ({_actividades, _color_label_event}) => {
                         <div className= {_styles.info}>
                           <span className= {_styles.titulo}><h4>{evento.titulo}</h4></span>
                           <span className= {_styles.descripcion}>{evento.descripcion}</span>
-                          <span className= {_styles.ponente}>{evento.ponente}</span>
+                          {evento.ponente && (
+                            <span className="_styles.ponente">
+                              {evento.ponente.split('\n').map((line, i) => (
+                                <div key={i}>{line}</div>
+                              ))}
+                            </span>
+                          )}
                         </div>
                         : null
                       }

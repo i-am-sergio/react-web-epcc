@@ -11,7 +11,7 @@ const Contador = () =>  {
     let interval = useRef();
 
     const startTimer = () => {
-        const countdownDate = new Date('October 26, 2023 00:17:10').getTime();
+        const countdownDate = new Date('October 9, 2023 08:45:00').getTime();
 
         interval = setInterval(() => {
             const now = new Date().getTime();

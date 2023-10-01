@@ -17,7 +17,7 @@ const Activities = () => {
     },
     {
       id: "actividad3",
-      title: "Robótica Educativa",
+      title: "E-Sports",
       link: "https://www.youtube.com",
       color: "text-myRed",
     },
