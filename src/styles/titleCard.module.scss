@@ -29,7 +29,7 @@
         // color: map-get($colors, terciario);
         transition-duration: 0.5s;
         transform: scale(1.10);
-        cursor: pointer;
+        // cursor: pointer;
 }
 
 @media (min-width: map-get($breakpoints, tablet)) {
