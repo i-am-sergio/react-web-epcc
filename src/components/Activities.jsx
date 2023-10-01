@@ -7,25 +7,25 @@ const Activities = () => {
       id: "actividad1",
       title: "Programación Competitiva Universitaria",
       link: "https://www.youtube.com",
-      color: "text-myYellow",
+      color: "text-myGreen",
     },
     {
       id: "actividad2",
       title: "Programación Competitiva Escolar",
       link: "https://www.youtube.com",
-      color: "text-myGreen2",
+      color: "text-myGreen",
     },
     {
       id: "actividad3",
       title: "E-Sports",
       link: "https://www.youtube.com",
-      color: "text-myRed",
+      color: "text-myGreen",
     },
     {
       id: "actividad4",
       title: "Desarrollo de videojuegos",
       link: "https://www.youtube.com",
-      color: "text-myBlue",
+      color: "text-myGreen",
     },
   ];
 
