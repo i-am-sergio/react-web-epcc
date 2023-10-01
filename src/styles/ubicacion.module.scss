@@ -27,31 +27,40 @@
 
 @media (min-width: map-get($breakpoints, laptop)) {
     .ubicacion {
-        @include section('laptop');        
+        @include section('laptop');   
+    }
+
+    .subtitle {
+        margin-bottom: 64px;
     }
     
     .mapa {
-        display: block;
         margin: 24px;
+        flex: 1;
     }
 
-    .subtitle{
-        margin-bottom: 64px;
+    .content_container {
+        display: flex;
+        flex-direction: row;
+        width: 100%;
     }
 
     .container {
+        flex: 1;
+        flex-direction: column;
         display: flex;
-        flex-direction: row;
         gap: 16px;
-        
-        section {
-            flex: 1;
-        }
     }
 }
 
 @media (min-width: map-get($breakpoints, desktop)) {
     .ubicacion {
         @include section('desktop');
+    }
+
+    .content_container {
+        display: flex;
+        flex-direction: row;
+        width: 100%;
     }
 }
