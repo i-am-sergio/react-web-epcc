@@ -1,0 +1,90 @@
+@import "./Utils/constants.scss";
+@import "./Utils/layouts.scss";
+@import "./Utils/fonts";
+@import "./utils/blocks";
+
+.sponsors {
+    @include section;
+    align-items: center;
+    background: map-get($background, seccion-oscuro);
+    padding-left: calc($padding-X-mobile * 2) ;
+    padding-right: calc($padding-X-mobile * 2) ;
+    flex-direction: column;
+    h2 {
+        @include block-title-center;
+    }
+}
+
+.container_stats {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 32px;
+    width: 80%;
+    .stat_item {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        width: 10%;
+        img {
+            max-width: 100%;
+            height: auto;
+        }
+    }
+}
+
+@media (max-width: 374px), (min-width: map-get($breakpoints, mobile)) {
+    .sponsors {
+        @include section('mobile');
+    }
+    .container_stats {
+        gap: 10px;
+        display: inline-flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        width: 100%;
+        justify-content: center;
+        .stat_item{
+            width: 25%;
+        }
+    };
+}
+
+@media (min-width: map-get($breakpoints, tablet)) {
+    .sponsors {
+        @include section('tablet');
+    }
+    .container_stats {
+        display: inline-flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+    };
+}
+
+@media (min-width: map-get($breakpoints, laptop)) {
+    .sponsors {
+        @include section('laptop');
+    }
+    .container_stats {
+        display: flex;
+        width: 100%;
+    };
+}
+
+@media (min-width: map-get($breakpoints, desktop)) {
+    .sponsors {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        @include section('desktop');
+    }
+    .container_stats {
+        display: flex;
+        width: 100%;
+        .stat_item{
+            width: 10%;
+        }
+    };
+}
