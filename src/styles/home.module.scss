@@ -75,7 +75,7 @@
         align-items: center; 
         height: auto;
 
-        background-image: url("https://github.com/i-am-sergio/react-web-epcc/blob/main/src/assets/robot.png");
+        background-image: url("https://github.com/i-am-sergio/react-web-epcc/blob/main/src/assets/robot.png?raw=true");
         background-repeat: no-repeat;
         background-position: center;
         background-size: contain;
@@ -100,6 +100,7 @@
 @media (min-width: map-get($breakpoints, laptop)) {
   .home {
     @include section('laptop');
+    padding-top: 16px;
     flex-wrap: nowrap;
     flex-direction:row;
     height: auto;
