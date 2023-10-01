@@ -53,7 +53,7 @@ function Navbar2() {
             Cronograma
           </a>
           <a href="#ubicacion" className="font-poppins" onClick={showNavbar}>
-            Ubicacion
+            Ubicación
           </a>
           <button
             className="nav-btn nav-close-btn third-element"

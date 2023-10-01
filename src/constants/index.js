@@ -36,12 +36,12 @@ export const features = [
     icon: shield,
     title: "Actividades",
     content:
-      "Seras participe de ponencias en las distintas areas tematicas relacionadas a la computacion y las matematicas",
+      "Seras partícipe de ponencias en las distintas areas temáticas relacionadas a la computación y las matemáticas",
   },
   {
     id: "feature-3",
     icon: send,
-    title: "Confraternizacion",
+    title: "Confraternización",
     content:
       `Tendremos un espacio para compartir experiencias y fortalecer la red de la familia de "Computer Science"`,
   },
@@ -51,7 +51,7 @@ export const features = [
 export const direcciones = [
   {
     id: "feature-1",
-    title: "Direccion",
+    title: "Dirección",
     content:
       "Av. Venezuela S/N Puerta 3 Campus de Ingenieria (Pabellón Alan Turing)",
   },
@@ -108,7 +108,7 @@ export const stats = [
   },
   {
     id: "stats-4",
-    title: "Areas Tematicas",
+    title: "Areas Temáticas",
     value: "10+",
   },
 ];

@@ -2,6 +2,7 @@
 @import "./Utils/_fonts.scss";
 
 .contador {
+    margin-top: auto;
     display: flex;
     flex-wrap: wrap;
     :global {

@@ -5,19 +5,19 @@ const Activities = () => {
   const actividades = [
     {
       id: "actividad1",
-      title: "Programacion Competitiva Universitaria",
+      title: "Programación Competitiva Universitaria",
       link: "https://www.youtube.com",
       color: "text-myYellow",
     },
     {
       id: "actividad2",
-      title: "Programacion Competitiva Escolar",
+      title: "Programación Competitiva Escolar",
       link: "https://www.youtube.com",
       color: "text-myGreen2",
     },
     {
       id: "actividad3",
-      title: "Robotica Educativa",
+      title: "Robótica Educativa",
       link: "https://www.youtube.com",
       color: "text-myRed",
     },
