@@ -12,21 +12,24 @@
     border-radius: 8px;
     text-align: center;
     background: map-get($background, fondo_gradiente);
-    box-shadow: 9px 11px 0px 0px map-get($colors, terciario);
-
+    // box-shadow: 9px 11px 0px 0px map-get($colors, terciario);
     h3 {
-        color: map-get($colors, secundario);
+        // color: map-get($colors, secundario);
+        color: #cec8c8;
     }
     
     a {
         text-decoration: underline;
     }
       
-    a:hover {
-        color: map-get($colors, terciario);
+    
+}
+
+.titleCard:hover {
+        // color: map-get($colors, terciario);
         transition-duration: 0.5s;
-        transform: scale(1.20);
-    }
+        transform: scale(1.10);
+        // cursor: pointer;
 }
 
 @media (min-width: map-get($breakpoints, tablet)) {

@@ -1,5 +1,6 @@
 import { VscSourceControl } from "react-icons/vsc";
 import _styles from "../../styles/titleCard.module.scss";
+import "../../css/titlecardstyles.css";
 
 const TitleCard = ({ id, color, title, link }) => (
     <div 
@@ -17,6 +18,7 @@ const TitleCard = ({ id, color, title, link }) => (
             <a
             href={link}
             target="blank"
+            className="bases"
             >
                 Bases de actividad
             </a>

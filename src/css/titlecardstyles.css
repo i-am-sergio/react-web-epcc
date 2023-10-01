@@ -1,0 +1,34 @@
+.bases {
+    text-decoration: none;
+    text-align: center;
+    padding: 8px 32px;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid transparent;
+    border-radius: 8px;
+    color: #73ff32;
+    background-color: transparent; /* Color de fondo inicial */
+    transition: 0.4s;
+    position: relative; /* Añadido para establecer el contexto para el pseudo-elemento */
+    font-size: small;
+}
+
+.bases:hover {
+    background-color: #73ff32; /* Nuevo color de fondo en :hover */
+    color: black; /* Cambia el color del texto a negro en :hover */
+    border: 1px solid #73ff32;
+}
+
+.bases::before {
+    content: ""; /* Pseudo-elemento para aplicar el efecto de parpadeo */
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    border-radius: 8px;
+    border: 2px solid #73ff32;
+    pointer-events: none; /* Evita que el pseudo-elemento sea interactivo */
+    z-index: -1; /* Coloca el pseudo-elemento detrás del contenido */
+    transition: inherit; /* Hereda la transición del elemento principal */
+}
