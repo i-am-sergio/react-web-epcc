@@ -6,25 +6,32 @@ const Activities = () => {
     {
       id: "actividad1",
       title: "Programación Competitiva Universitaria",
-      link: "https://www.youtube.com",
       color: "text-myGreen",
     },
     {
       id: "actividad2",
       title: "Programación Competitiva Escolar",
-      link: "https://www.youtube.com",
+      link: "https://drive.google.com/file/d/1YqrFjAP4x7kSZtcKHR4-l3bhK51R6oqk/view?usp=sharing",
       color: "text-myGreen",
     },
     {
       id: "actividad3",
       title: "E-Sports",
-      link: "https://www.youtube.com",
       color: "text-myGreen",
     },
     {
       id: "actividad4",
-      title: "Desarrollo de videojuegos",
-      link: "https://www.youtube.com",
+      title: "TALLER\nComputación Afectiva",
+      color: "text-myGreen",
+    },
+    {
+      id: "actividad5",
+      title: "TALLER\nPensamiento Computacional",
+      color: "text-myGreen",
+    },
+    {
+      id: "actividad6",
+      title: "TALLER\nNVIDIA: Fundamentos de Deep Learning",
       color: "text-myGreen",
     },
   ];

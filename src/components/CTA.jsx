@@ -20,11 +20,11 @@ const CTA = () => (
     className={_styles.ubicacion}
   >
     <h2>Ubicaci&oacute;n</h2>
-      <div>
         <p className={_styles.subtitle}>
           UNIVERSIDAD NACIONAL DE SAN AGUSTIN, AREQUIPA <br /> PABELLON DE
           CIENCIA DE LA COMPUTACION
         </p>
+      <div className={_styles.content_container}>
         <div className={_styles.container}>
           {direcciones.map((feature, index) => (
               <InfoCard 
@@ -34,11 +34,11 @@ const CTA = () => (
                 contentComponent={componentArray[index]}
               />
             ))}
-            </div>
-      </div>
-      <div className={_styles.mapa}>
-        <Mapa />
-      </div>
+        </div>
+        <div className={_styles.mapa}>
+          <Mapa />
+        </div>
+      </div> 
   </section>
 );
 

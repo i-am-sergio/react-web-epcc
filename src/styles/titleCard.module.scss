@@ -41,7 +41,8 @@
 
 @media (min-width: map-get($breakpoints, laptop)) {
     .titleCard {
-        flex: 1;
+        width: 30%;
+        max-width: 290px;
         justify-content: space-between;
         width: 29%;
         h3 {

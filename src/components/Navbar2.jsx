@@ -55,6 +55,9 @@ function Navbar2() {
           <a href="#ubicacion" className="font-poppins" onClick={showNavbar}>
             Ubicación
           </a>
+          <a href="" target="blank"  className="font-poppins" id="btn-inscripcion" onClick={showNavbar}>
+            Inscríbete
+          </a>
           <button
             className="nav-btn nav-close-btn third-element"
             onClick={showNavbar}
