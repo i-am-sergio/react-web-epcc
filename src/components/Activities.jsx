@@ -6,6 +6,7 @@ const Activities = () => {
     {
       id: "actividad1",
       title: "Programación Competitiva Universitaria",
+      link: "https://drive.google.com/file/d/1dUFqLkdCeLJx6vkN0BG6eaGgUV_ZKTiJ/view?usp=drive_link",
       color: "text-myYellow",
     },
     {
@@ -17,6 +18,7 @@ const Activities = () => {
     {
       id: "actividad3",
       title: "E-Sports",
+      link: "https://chat.whatsapp.com/GcMMPGQPPbP0dTMGy9qc43",
       color: "text-myRed",
     },
     {

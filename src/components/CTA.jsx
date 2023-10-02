@@ -21,8 +21,8 @@ const CTA = () => (
   >
     <h2>Ubicaci&oacute;n</h2>
         <p className={_styles.subtitle}>
-          UNIVERSIDAD NACIONAL DE SAN AGUSTIN, AREQUIPA <br /> PABELLON DE
-          CIENCIA DE LA COMPUTACION
+          UNIVERSIDAD NACIONAL DE SAN AGUST&Iacute;N, AREQUIPA <br /> PABELL&Oacute;N DE
+          CIENCIA DE LA COMPUTACI&Oacute;N
         </p>
       <div className={_styles.content_container}>
         <div className={_styles.container}>
