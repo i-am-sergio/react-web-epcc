@@ -100,10 +100,12 @@
 @media (min-width: map-get($breakpoints, laptop)) {
   .home {
     @include section('laptop');
-    padding-top: 16px;
+    padding-top: 64px;
+    padding-left: 15rem;
+    padding-right: 15rem;
     flex-wrap: nowrap;
     flex-direction:row;
-    height: auto;
+    height: calc(100vh - 70px);
     gap: 0;
     &_container {
       &_left {
